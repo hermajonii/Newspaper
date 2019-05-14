@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Horoskop</title>
+    <link href="css/bootstrap.min.css"  rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stil.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body class="horoskop bg-dark"  >
+    <nav class="navbar navbar-expand-md bg-dark p-0">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+            <i class="fas fa-bars text-light" size="3" ></i>
+        </button>
+        <a href="#"> <img height="70px" src="img/logo.png" >   </a>       
+        <div class="btn-group d-flex justify-content-center pr-2" role="group">
+            <a href="index.html"> 
+                <button type="button" class="btn btn-secondary mr-1 ml-1"><i class="fas fa-home"></i></button>
+            </a>
+            <button type="button" class="btn btn-secondary rounded" data-toggle="modal" data-target="#modalniProzor"><i class="far fa-comment-dots"></i></button>
+            <div class="modal fade" id="modalniProzor">
+                <div class="modal-dialog modal-md">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Ostavite vaš komentar</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                                <textarea name="" id="" class="form-control" cols="40" rows="8"></textarea>                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Pošaljite</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="collapse navbar-collapse" id="collapse_target">          
+            <ul class="navbar-nav p-0 m-0">
+                <li class="nav-item">
+                    <a class="nav-link rounded  d-flex justify-content-center pr-1 pl-1" href="najnovije.html"><h6 class="m-0 mr-1 d-inline"><em> <strong>Najnovije vesti</strong></em></h6><span class="badge badge-success  m-0 ">NOVO!</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link rounded  d-flex justify-content-center pr-1 pl-1" href="najpopularnije1.html"><h6 class="m-0"> <em> <strong>Najpopularnije</strong></em></h6></a>
+                </li>             
+                <li class="nav-item">
+                    <a class="nav-link rounded text-dark d-flex justify-content-center pr-1 pl-1" href="horoskop.html" id="horoskop" style="background-color: rgb(226, 113, 187)"> <h6 class="m-0"><em> <strong>Horoskop</strong></em></h6></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link rounded  d-flex justify-content-center" href="kontakt.html"> <h6 class="m-0"><em> <strong>Kontakt</strong></em></h6></a>
+                </li>
+            </ul>
+        </div>  
+    </nav>
+    <div class="container" style="background: url(img/horoskop.jpg); background-size:100%; background-repeat: repeat-y;  box-shadow: 0px 0px 30px black;">
+        <p class="text-light vrati fixed-bottom p-2 bg-dark d-flex justify-content-center font-italic" style="opacity:0; margin-bottom: 0px;" onclick="vrati()"> &#8593 Vrati se na početak</p>
+        <div class="row m-0 p-0 text-center">
+            <div class="horoskopSlike col-lg-1 col-2 m-0 p-0" > 
+            <a href="#jarac"  data-toggle="tooltip" title="JARAC"> <img src="img/jarac.jpg" height="55px" alt="" class="s m-0 p-0 rounded-circle"></a>
+            </div>
+            <div class="horoskopSlike col-lg-1 col-2 m-0 p-0" > 
+            <a href="#vodolija" data-toggle="tooltip" title="VODOLIJA"><img src="img/vodolija.jpg" height="55px" alt="" class="s m-0 p-0 rounded-circle"></a>
+            </div>
+            <div class="horoskopSlike col-lg-1 col-2 m-0 p-0" > 
+            <a href="#riba" data-toggle="tooltip" title="RIBA"> <img src="img/riba.jpg" height="55px" alt="" class="s m-0 p-0 rounded-circle"></a>
+            </div>
+            <div class="horoskopSlike col-lg-1 col-2 m-0 p-0" > 
+            <a href="#ovan" data-toggle="tooltip" title="OVAN"> <img src="img/ovan.jpg" height="55px" alt="" class="s m-0 p-0 rounded-circle"></a>
+            </div>
+            <div class="horoskopSlike col-lg-1 col-2 m-0 p-0" > 
+            <a href="#bik" data-toggle="tooltip" title="BIK"> <img src="img/bik.jpg" height="55px" alt="" class="s m-0 p-0 rounded-circle"></a>
+            </div>
+            <div class="horoskopSlike col-lg-1 col-2 m-0 p-0" > 
+            <a href="#blizanac" data-toggle="tooltip" title="BLIZANAC"> <img src="img/blizanac.jpg" height="55px" alt="" class="s m-0 p-0 rounded-circle"></a>           
+            </div>
+            <div class="horoskopSlike col-lg-1 col-2 m-0 p-0" > 
+            <a href="#rak" data-toggle="tooltip" title="RAK"> <img src="img/rak.jpg" height="55px" alt="" class="s m-0 p-0 rounded-circle"></a>
+            </div>
+            <div class="horoskopSlike col-lg-1 col-2 m-0 p-0" > 
+            <a href="#lav" data-toggle="tooltip" title="LAV"> <img src="img/lav.jpg" height="55px" alt="" class="s m-0 p-0 rounded-circle"></a>
+            </div>
+            <div class="horoskopSlike col-lg-1 col-2 m-0 p-0" > 
+            <a href="#devica" data-toggle="tooltip" title="DEVICA"> <img src="img/devica.jpg" height="55px" alt="" class="s m-0 p-0 rounded-circle"></a>
+            </div>
+            <div class="horoskopSlike col-lg-1 col-2 m-0 p-0" > 
+            <a href="#vaga" data-toggle="tooltip" title="VAGA"> <img src="img/vaga.jpg" height="55px" alt="" class="s m-0 p-0 rounded-circle"></a>
+            </div>
+            <div class="horoskopSlike col-lg-1 col-2 m-0 p-0" > 
+            <a href="#skorpija" data-toggle="tooltip" title="SKORPIJA"> <img src="img/skorpija.jpg" height="55px" alt="" class="s m-0 p-0 rounded-circle"></a>
+            </div>
+            <div class="horoskopSlike col-lg-1 col-2 m-0 p-0" > 
+            <a href="#strelac" data-toggle="tooltip" title="STRELAC"> <img src="img/strelac.jpg" height="55px" alt="" class="s m-0 p-0 rounded-circle"></a>
+               </div>
+        </div>
+        <div class="row font-weight-bold" >
+        <p class="col-12 text-light p-3" style="background-color: rgba(36, 28, 28, 0.212);">
+            Horoskop je simbolički prikaz međuodnosa prirodnih principa na izvesnom mestu u trenutku nečijeg rođenja koji je u skladu s međuodnosom tih istih prirodnih zakona u svesti pojedinca. Horoskop je slika neba u određenom trenutku (položaji Sunca, Meseca, planeta, zvezda), gledano sa određene tačke na planeti Zemlji u određenom trenutku. Horoskop se sastoji od velikog broja elemenata i njihovih povezanosti. Astroloških elemenata, astroloških znakova, astrološke kuće, planete, planetarni aspekti. Pročitajte i analizirajte današnji horoskop na našem sajtu.
+        </p>
+        <p class="col-12 mt-3 text-light p-3 back" id="jarac"  tabindex="1">
+                <img src="img/jarac.jpg" style="width:20px;" alt="" class=" s m-0 p-0 rounded-circle"> 
+                JARAC: Novi Mesec u znaku Jarca, propraćen pomračenjem Sunca, biće razlog za radovanje početkom januara, što predstavlja odličan trenutak da razmislite kako da započnete sa svim novim idejama koje imate. Vi ste ambiciozan znak koji cveta kada dostiže ciljeve koje je sebi postavio, pa će ovaj Novi Mesec biti odličan način da započnete 2019. godinu. Svuda oko vas su znaci koji će vam dati do znanja da li se krećete pravim putem. Obratite pažnju kada vam univerzum daje zeleno, a kada crveno svetlo.
+                Saturn, vaš vladar, takođe će biti u vašem znaku ove godine, što ukazuje na to da ćete imati razne prilike u svakoj oblasti vašeg života. Volite da odvojite vreme i posvetite se svim detaljima pre nego što nastavite dalje, pošto je mnogo važnije da nešto uradite kako treba od toga da ga završite što pre. Budite oprezni od kraja aprila do sredine septembra, kada će Saturn biti u svojoj retrogradnoj fazi i kada će razne prepreke usporiti vaš karijerni napredak. Zatražite duže rokove ili pomoć ukoliko vam je ona potrebna.               
+                Pluton će ući u svoju direktnu fazu početkom oktobra. Iako ovo neće doneti velike promene u vašu svakodnevnicu, vi ste znak koji će najviše osetiti ovaj diskretan prelazak. Sada je vaš trenutak da izgradite nešto iz temelja. Na svu sreću, imali ste vremena u proteklih par meseci retrogradne faze da razmišljate o tome šta je prošli put pošlo naopako, kao i kako da se toga otarasite u budućnosti.
+        </p>
+        <p class="col-12 mt-3 text-light p-3 back" id="vodolija" tabindex="2">
+                <img src="img/vodolija.jpg" style="width:20px;" alt="" class=" s m-0 p-0 rounded-circle"> VODOLIJA: Uran će napraviti veliku promenu ove godine. On se relativno sporo kreće (otprilike 6-7 godina po znaku), pa je njegov prelazak iz vatrenog Ovna u sporijeg Bika početkom marta veliki događaj. Energije ova dva aspekta su kontradiktorne, jer je Uran naklonjen istraživanju i eksperimentisanju, dok je Bik više naklonjen tradicionalnom i ustaljenom pristupu stvarima. Retrogradni period započinje sredinom avgusta i završava se tek naredne godine. Previše pokušaja za spoljašnjom promenom rezultirali su potrebom za unutrašnjom promenom. Odvojite vreme iz svog zauzetog rasporeda za razmišljanje o lekcijama koje ste možda propustili u prethodnom periodu.
+                Saturn se nalazi u znaku Jarca tokom cele godine, označavajući jaku radnu etiku i potrebu da se uozbiljite sa nekim stvarima. Retrogradni period od kraja aprila do sredine septembra je podsetnik da ne smete da se previše izgubite u svojim mislima. Negativnost zbog grešaka iz prošlosti je verovatna, ali nije sve vaša krivica. Dajte sebi oduška i razmišljajte pozitivno!               
+                Mars je uvek silan, ali donekle će omekšati kada se bude našao u znaku umerene Vage u oktobru. Ovo je negativna pozicija, što znači da se ova dva aspekta ne slažu najbolje, pa će vaš zadatak u ovom periodu biti da pokušate da izvučete najbolje iz svakog aspekta ponaosob. Ovo nije trenutak da budete tvrdoglavi i pasivno-agresivni prema drugima. Direktan pristup je vaš najbolji izbor.    
+        </p>
+        <p class="col-12 mt-3 text-light p-3 back" id="riba" tabindex="3">
+                <img src="img/riba.jpg" style="width:20px;" alt="" class=" s m-0 p-0 rounded-circle"> RIBA: Najvažnija stvar za vas u 2019. godini je to što je vaš vladar Neptun u znaku Ribe svih 12 meseci, što znači da ćete biti poverljivi i velikodušni i da ćete brinuti o drugima više nego što ćete brinuti o sebi. Nažalost, Neptun će biti u retrogradnoj fazi od juna do novembra, otkrivajući sve surove istine koje ste se trudili da izbegavate. Kada se istina prvi put bude saznala, možda nećete biti toliko srećni, ali vremenom ćete uspeti da izvučete korist iz ovog neprijatnog perioda.
+                Sunce će biti u vašem znaku od februara do kraja marta, kada ćete imati utisak da je čaša do pola puna, a ne prazna. Iako ste se u prošlosti opekli par puta kada ste pokušali da pomognete drugima, to vas neće sprečiti da nastavite da pomažete onima kojima je vaša pomoć stvarno potrebna. Vi ste najmanje sujetan znak, što je za veliku pohvalu i divljenje.               
+                Mars se neće naći u vašem znaku tokom 2019. godine, ali svratiće u duge vodene znakove- u znaku Raka biće otprilike 6 nedelja, počevši od sredine maja i u znaku Škorpije, od sredine novembra pa do kraja godine. Mars se neće dobro slagati sa osećajnom energijom Raka, ali biće kao kod kuće u znaku Škorpije, pa treba da budete spremni da iskoristite taj period i energiju koju on nudi.      
+        </p>
+        <p class="col-12 mt-3 text-light p-3 back" id="ovan" tabindex="4">
+                <img src="img/ovan.jpg" style="width:20px;" alt="" class=" s m-0 p-0 rounded-circle"> OVAN: Ove godine nema suzdržavanja za Ovnove! U 2019. godini, imaćete priliku da svetu pokažete ko ste i šta sve možete!
+
+                Vaš vladar je moćni Mars, koji će ovu godinu započeti punom snagom i u vašem znaku. Ovo će vam pružiti veliku prednost na početku godine, utabavajući put kojim ćete se kretati do postizanja vaših ciljeva i ambicija. Početkom oktobra, Mars će ući u znak Vage, gde će izgubiti deo svoje moći, pa se u ovom periodu možda nećete osećati naročito spontano i inspirisano. Vaga ima privlačan uticaj, ali kada budete pokušali da se stišate, izgledaćete pasivno-agresivno. Vi imate dobre namere, ali jednostavno ne uspevate da uverite druge u njih.
+                
+                Sunce će biti u vašem znaku od kraja marta do kraja aprila, obeležavajući period kada ćete moći da se predstavite u pravom svetlu. To znači da ćete biti hrabri, spontani i puni života, kao i da ćete pratiti uzbuđenje gde god ono bude išlo! U ovom periodu ćete takođe biti izuzetno takmičarski nastrojeni, pa će dokazivanje i uzdizanje iznad konkurencije biti vaša najveća motivacija za lični uspeh. Potrudite se da, uprkos svemu što je pred vama, ostanete dostojanstveni do samog kraja.
+                
+                Komunikacija će pretrpeti udarac za vreme retrogradnih ciklusa Merkura (u martu, julu i krajem oktobra), naročito kada je u pitanju iskazivanje vaših osećanja. Sa Merkurom u emotivnim vodenim znakovima, imaćete problema da se izrazite onako kako želite. Potrudite se da slušate svoj instinkt kako bi ste prošli sa što manje negativnih posledica. 
+        </p>
+        <p class="col-12 mt-3 text-light p-3 back" id="bik" tabindex="5">
+                <img src="img/bik.jpg" style="width:20px;" alt="" class=" s m-0 p-0 rounded-circle"> BIK:
+                Venera neće ulaziti u retrogradne periode u 2019. godini, ali da li to znači da će pred vama biti samo mirna pučina? To najverovatnije neće biti slučaj, ali sigurno ćete moći da se odmorite od neprijatnosti u ljubavnom životu i finansijskim pitanjima kojima Venera rukovodi. Možete se radovati preklapanju Venere i Jupitera u znaku Strelca krajem januara, najviše zbog umirujuće energije koju ovaj aspekt donosi. Sada će sve izgledati lakše i prijatnije.
+                
+                Četvoromesečni retrogradni ciklus Jupitera koji počinje od aprila, pomoći će vam da pronađete vreme za razmišljanje i osvrt na vašu duhovnost. Suočavanje sa vašim negativnim osobinama i navikama nije lako, ali mogućnost sazrevanja je velika.
+                
+                Novi Mesec u vašem znaku početkom maja će vam pomoći da započnete nove projekte i osnujete nova prijateljstva, ukoliko budete znali da iskoristite moćni potencijal ovog aspekta. Sve što budete započeli sada biće uspešno ukoliko budete ispratili svaki projekat do samog kraja. Podela obaveza je uvek mogućnost, ali samo vi posedujete finesu za sitne detalje koje želite da doterate.
+                
+                Uran će se naći u vašem zemljanom znaku početkom Marta i započeti svoju retrogradnu fazu u avgustu. Ovo nije najlakše sparivanje, pošto Uran voli da preuzima vođstvo, dok vi želite da očuvate stvari po starom. Da li možete da dođete do kompromisa? Da, ali moraćete da imate otvoreniji um nego obično. Jupiterov retrogradni ciklus podstaćiće vas na introspekciju, pa ćete imati priliku da preusmerite energiju ka unutra. 
+        </p>
+        <p class="col-12 mt-3 text-light p-3 back" id="blizanac" tabindex="6">
+                <img src="img/blizanac.jpg" style="width:20px;" alt="" class=" s m-0 p-0 rounded-circle"> BLIZANAC: Bićete raspoloženi za sve ove godine!
+
+                Merkur, vaš brbljivi vladar, će imati tri retrogradna perioda ove godine, u martu, julu i novembru, a svaki od njih će provesti u nekom vodenom znaku. Pošto su vodeni znakovi izuzetno intuitivni, moći ćete da verujete svom instinktu ukoliko budete bili zbunjeni ili ukoliko ne budete znali kako da napredujete. Ovo će možda biti u suprotnosti sa vaštom logičkom prirodom, ali možete dobiti dobre rezultate ukoliko budete iskoračili iz svoje zone komfora i slušali svoj unutrašnji glas.
+                
+                Uran će se naći u znaku sigurnog Bika početkom marta, što bi trebalo da malo uzdrma stvari. Šta više ne funkcioniše za vas? Možda je ljubavna veza ili poslovno partnerstvo došlo do svog kraja? Da li je vreme da razmišljate o promeni posla? Da li je vašem odelu i stilu potrebna promena? Bilo da je velika ili mala promena, ovaj aspekt će vas podsetiti da promena može biti izuzetno dobra stvar.
+                
+                Sunce će se nalaziti u vašem znaku od kraja maja do početka juna, pa ćete biti naročito društveni i radoznali u ovim letnjim mesecima. Oslonićete se na svoju intelektualnu stranu, pa ćete želeti da naučite sve što možete o raznim temama. Kvizovi su stvoreni za vas! Provođenje vremena sa porodicom i prijateljima u razgovorima je vaša omiljena zanimacija!   
+        </p>
+        <p class="col-12 mt-3 text-light p-3 back" id="rak" tabindex="7">
+                <img src="img/rak.jpg" style="width:20px;" alt="" class=" s m-0 p-0 rounded-circle"> RAK: Ovo je godina kada ćete biti u potpunoj kontroli nad svojom sudbinom! Vreme je da pokažete svetu šta stvarno možete.
+
+                Možda ćete biti povučeni u svoju udobnu ljušturu krajem 2018. godine, za šta su zaslužna negativna iskustva, neočekivane vesti ili razna druga razočarenja, pa nećete biti toliko željni da pokažete svoja prava osećanja. Možda ste se već otvorili na društvenoj mreži i opekli se, ili ste se možda plašili da pokažete drugima kako se stvarno osećate. Svakako, osećate jake emocije koje bi ste trenutno radije zadržali za sebe, što je sasvim OK.
+                
+                Pun Mesec u januaru baciće svetlo na vaše slabe tačke, a činjenica da će u pitanju biti „super Mesec“ znači da nećete imati puno mesta za sakrivanje. Kakvu ruku ste sposobni da odigrate kada se karte neočekivano otkriju? Uskoro ćete saznati.
+                
+                Osećaćete se mnogo sigurnije kada se Sunce bude našlo u vašem znaku u periodu od kraja juna do kraja jula, kada će vaše samopouzdanje biti na vrhuncu i kada ćete moći da uživate u letnjim mesecima koji su pred vama. Volite letnja porodična okupljanja, a ovog leta ćete možda imati i neočekivano uzbudljiv ljubavni život.
+                
+                Pluton u znaku Jarca će ući u svoju direktnu fazu za vreme jeseni, oslobađajući vas od sumnji koje ste imali u proteklih par meseci.
+        </p>
+        <p class="col-12 mt-3 text-light p-3 back" id="lav" tabindex="8">
+                <img src="img/lav.jpg" style="width:20px;" alt="" class=" s m-0 p-0 rounded-circle"> LAV: Započećete godinu sa punim Mesecom u svom znaku krajem januara. Takođe, doći će i do pomračenja Meseca. Biće teško da sakrijete bilo šta, a naročito svoja prava osećanja. Osetićete velike promene u ovom periodu. Ukoliko budu bile pozitivne, želećete da ih podelite sa svima, dok ćete negativnije promene ipak želeti da ostavite u tišini.
+
+                Jul će biti važan mesec, pošto će Mars, Sunce i Venera ući u vaš znak u jednom trenutku. Mars u znaku Lava početkom meseca podstaćiće vas da započnete najrazličitije stvari o kojima ste razmišljali, poput novog režima ishrane i treninga, do rada na ličnom projektu i učenju stranog jezika. Šta god da je u pitanju, rešeni ste da date sve od sebe.
+                
+                Venera će ući u znak Lava krajem jula, što će preusmeriti pažnju sa vaše ljubavne veze na vaš lični život. Želećete da budete voljeni od strane svih oko vas, uključujući vašu porodicu, prijatelje i kolege. Što više komplimenata i pažnje budete dobili u narednih šest nedelja, to bolje. Mnogo je lakše živeti sa vama kada se osećate kao da ste u centru svačijeg univerzuma.
+                
+                Merkur će se naći u znaku Lava sredinom avgusta, čineći vaše razgovore i komunikaciju dramatičnijom nego obično. Uvek ćete rado podeliti svoje uspehe preko društvenih mreža, dok ćete neuspehe ipak želeti da zadržite za sebe.  
+        </p>
+        <p class="col-12 mt-3 text-light p-3 back" id="devica" tabindex="9">
+                <img src="img/devica.jpg" style="width:20px;" alt="" class=" s m-0 p-0 rounded-circle"> DEVICA: Godina će započeti sa punim Mesecom u vašem znaku, što može podeliti vašu ličnost na logičnu i emocionalnu stranu. Pokušajte da iskoristite ovaj dualitet u vašoj borbi da budete najbolja verzija sebe. Iako ponekada može biti zbunjujuće, balansiranje između ova dva sveta će biti ključ vašeg uspeha. Kada postignete pravu ravnotežu, razumećete gde ste, šta je to što želite, kao i kako ćete doći do svog cilja.
+
+                Avgust će biti prilično zauzet. Četiri velike energije će se naći u vašem znaku (Mars, Venera, Sunce i Merkur). Mars u znaku Device je orijentisan ka detaljima, što znači da ćete najzad moći da završite sa projektima kojima je nedostajala finalna obrada. Venera u vašem znaku označava praktičan pristup ljubavi i novčanim pitanjima, na šta ste već navikli. Što se tiče ova dva polja, nećete se toliko udaljavati od svoje zone komfora. Sunce će obasjati praktične oblasti vašeg života i staviće akcenat na pažnju koju ćete posvećivati detaljima. Sada su male stvari najvažnije!
+                
+                Važno je napomenuti i kraj avgusta, kada će Merkur biti u vašem znaku. Ovaj aspekt odiše praktičnošću, inteligencijom i dobrom komunikacijom, pa najverovatnije nećete imati problema u ovim oblastima. Merkur će imati tri retrogradna ciklusa ove godine, od kojih će svaki biti u nekom vodenom znaku, pa je praktičan pristup stvarima najbolji pristup u ovim periodima.
+        </p>
+        <p class="col-12 mt-3 text-light p-3 back" id="vaga" tabindex="10">
+                <img src="img/vaga.jpg" style="width:20px;" alt="" class=" s m-0 p-0 rounded-circle"> VAGA: 
+                Dobra vest ove godine je to da Venera, vaš vladar, neće ulaziti u retrogradne cikluse. Ona će se naći u vašem znaku sredinom septembra, kada ćete osećati da ste u perfektoj ravnoteži. Biće vam udobno u svojoj koži i ništa vam neće naročito smetati.               
+                Pun Mesec u vašem znaku označiće kraj marta i staviće u prvi plan odnose sa najbližima. Posvetite se jačanju trenutnih veza i obnavljanju starijih. Pod svetlom ovog Meseca, ništa neće izgledati nemoguće, pa vas može kontaktirati osoba koju dugo niste videli u potrazi za oproštajem ili prilikom da se iskupi. Pošto je ovo period obnavljanja, najverovatnije ćete joj pružiti šansu.
+                
+                Sunce će se naći u vašem znaku krajem septembra, kada bude došlo do preklapanja Sunca i Venere. Imaćete priliku da popravite ono što nije funkcionisalo početkom godine. Ovo će vam pružiti priliku da se posvetite vašim vezama, kako romantičnim, tako i poslovnim. Vaša velika želja je da povratite harmoniju u svom životu, a vaš glavni moto biće „Zašto se ne bi smo svi slagali?“  
+        </p>
+        <p class="col-12 mt-3 text-light p-3 back" id="skorpija" tabindex="11">
+                <img src="img/skorpija.jpg" style="width:20px;" alt="" class=" s m-0 p-0 rounded-circle"> SKORPIJA: Velika stvar ove godine je to što će Mars, vaš vladar, biti u svojoj direktnoj fazi, pa nećete morati da se brinete za manjak energije po kojoj ste poznati. U januaru, Mars će biti u znaku Ovna, što će vas inspirisati da postavite sebi nove ciljeve, a pored motivacije, primetno će porasti i vaše ambicije.
+                Saturn će se nalaziti u znaku Jarca tokom cele godine, što predstavlja još jedan izuzetno pozitivan aspekt kome se možete radovati. On će osigurati da vaš integritet ostane netaknut dok budete radili ka ostvarenju svojih ličnih i profesionalnih ciljeva. Međutim, ovaj aspekt takođe može prouzrokovati i dosta stresnih osećanja, pa se preporučuju aktivnosti koje će vas odmoriti i osvežiti, poput meditacije, masaža ili časova joge.
+                
+                Pluton će biti u znaku Jarca, donoseći poboljšanja u svim oblastima, a naročito u poslovnom domenu. Možda ćete osetiti usporavanje tempa prilikom Plutonovog ulaska u retrogradni ciklus krajem aprila, pa ćete imati prilike da se posvetite problemima za koje ranije niste imali vremena.              
+                U ovom periodu će naići i vaš rođendan, a garanciju dobrog provoda i lepih želja pruža Sunce koje će biti u vašem znaku na kraju oktobra. Često volite da zadržite svoja dostignuća za sebe, ali zaslužujete pohvale i poštovanje za sve ono što ste postigli tokom godine.  
+        </p>
+        <p class="col-12 mt-3 text-light p-3 back" id="strelac" tabindex="12">     
+                <img src="img/strelac.jpg" style="width:20px;" alt="" class="s m-0 p-0 rounded-circle"> STRELAC: Jupiter će se nalaziti u vašem društvenom znaku do početka decembra, pa se možete radovati iskrenoj zabavi i slobodnom umu tokom dobrog dela godine. Vaša uverenja su jasna, ali niste raspoloženi da propovedate svoj pogled na svet drugima. Većinom ste „živi i pusti druge da žive“ tip, ali, kao i većina ljudi, spremni ste da odbranite svoj stav i ono u šta verujete. Obratite pažnju da Jupiterovu retrogradnu fazu od početka aprila do početka avgusta, pošto ćete se dosta baviti prošlošću u ovom periodu. Razmislite o tome šta je to u šta stvarno verujete i uskladite svoj svakodnevni život sa vašim uverenjima.
+                Pun Mesec u vašem znaku sredinom juna povratiće vašu veru u čovečanstvo. Ovo je dobar trenutak da praktično primenite ono što ste naučili i proverite da li ste dobro savladali sve što ste želeli. Ukoliko je vaš život u poslednje vreme bio haotičan, ovaj pun Mesec će vam pomoći da ponovo povratite unutrašnji mir.
+                Brbljivi Merkur će ući u vaš znak početkom decembra, kada će biti na izlasku iz svog trećeg retrogradnog ciklusa ove godine. Još uvek ćete osećati posledice ove tranzicije, ali možete očekivati osetno poboljšanje u svakodnevnoj komunikaciji. Iskoristite ovaj period za usavršavanje u vidu pohađanja nekog kursa ili učenja stranog jezika. 
+        </p>
+        </div>
+        <div class="row m-0 p-0">
+                <div class="horoskopSlike  col-lg-1 col-2 m-0 p-0" > 
+                <a href="#jarac"  data-toggle="tooltip" title="JARAC"> <img src="img/jarac.jpg" height="55px" alt="" class="s m-0 p-0 rounded-circle"></a>
+                </div>
+                <div class="horoskopSlike col-lg-1 col-2 m-0 p-0" > 
+                <a href="#vodolija" data-toggle="tooltip" title="VODOLIJA"><img src="img/vodolija.jpg" height="55px" alt="" class="s m-0 p-0 rounded-circle"></a>
+                </div>
+                <div class="horoskopSlike col-lg-1 col-2 m-0 p-0" > 
+                <a href="#riba" data-toggle="tooltip" title="RIBA"> <img src="img/riba.jpg" height="55px" alt="" class="s m-0 p-0 rounded-circle"></a>
+                </div>
+                <div class="horoskopSlike col-lg-1 col-2 m-0 p-0" > 
+                <a href="#ovan" data-toggle="tooltip" title="OVAN"> <img src="img/ovan.jpg" height="55px" alt="" class="s m-0 p-0 rounded-circle"></a>
+                </div>
+                <div class="horoskopSlike col-lg-1 col-2 m-0 p-0" > 
+                <a href="#bik" data-toggle="tooltip" title="BIK"> <img src="img/bik.jpg" height="55px" alt="" class="s m-0 p-0 rounded-circle"></a>
+                </div>
+                <div class="horoskopSlike col-lg-1 col-2 m-0 p-0" > 
+                <a href="#blizanac" data-toggle="tooltip" title="BLIZANAC"> <img src="img/blizanac.jpg" height="55px" alt="" class="s m-0 p-0 rounded-circle"></a>           
+                </div>
+                <div class="horoskopSlike col-lg-1 col-2 m-0 p-0" > 
+                <a href="#rak" data-toggle="tooltip" title="RAK"> <img src="img/rak.jpg" height="55px" alt="" class="s m-0 p-0 rounded-circle"></a>
+                </div>
+                <div class="horoskopSlike col-lg-1 col-2 m-0 p-0" > 
+                <a href="#lav" data-toggle="tooltip" title="LAV"> <img src="img/lav.jpg" height="55px" alt="" class="s m-0 p-0 rounded-circle"></a>
+                </div>
+                <div class="horoskopSlike col-lg-1 col-2 m-0 p-0" > 
+                <a href="#devica" data-toggle="tooltip" title="DEVICA"> <img src="img/devica.jpg" height="55px" alt="" class="s m-0 p-0 rounded-circle"></a>
+                </div>
+                <div class="horoskopSlike col-lg-1 col-2 m-0 p-0" > 
+                <a href="#vaga" data-toggle="tooltip" title="VAGA"> <img src="img/vaga.jpg" height="55px" alt="" class="s m-0 p-0 rounded-circle"></a>
+                </div>
+                <div class="horoskopSlike col-lg-1 col-2 m-0 p-0" > 
+                <a href="#skorpija" data-toggle="tooltip" title="SKORPIJA"> <img src="img/skorpija.jpg" height="55px" alt="" class="s m-0 p-0 rounded-circle"></a>
+                </div>
+                <div class="horoskopSlike col-lg-1 col-2 m-0 p-0" > 
+                <a href="#strelac" data-toggle="tooltip" title="STRELAC"> <img src="img/strelac.jpg" height="55px" alt="" class="s m-0 p-0 rounded-circle"></a>
+                   </div>
+        </div>
+        <div class="row m-0 mt-3 p-3">
+                <h5 class="bg-dark text-light text-center p-2 col-12 font-italic">Preporučeno za vas</h5>
+                <div class="card col-12 col-lg-4 px-3 bg-light pb-0">
+                            <div class="card-header text-center">Sport <span class="badge badge-pill badge-danger">NOVO</span> </div>
+                            <h5 class="card-title text-center">SPREMA SE TRANSFER BOMBA U SUPERLIGI SRBIJE: (VIDEO)</h5>
+                            <img class="card-img-top" src="img/card5.jpg" alt="">
+                            <div class="card-body">         
+                                <button type="button" class="form-control btn btn-info rounded m-0" data-toggle="modal" data-target="#modalCard5">Saznaj više</button>
+                                    <div class="modal fade" id="modalCard5">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">SPREMA SE TRANSFER BOMBA U SUPERLIGI SRBIJE:</h4>
+                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Svi smo navikli na priču kako evropski velikane žele fudbalere večitih rivala Zvezde i Partizana, ali ovog puta priča je drugačija. <br>
+                                                    Možda je tačna tvrdnja da su igrači Zvezde i Partizana najcenjeni u Superligi Srbije, ali i po ostalim superligašima može da se nađe par kvalitetnih igrača koji još uvek nisu potpisali za ova dva fudbalska giganta.   <br>    
+                                                    Prema navodima portala Gana Soker Net, fudbaler Čukaričkog Samuel Ovusu se nalazi na meti Borusije iz Dortmunda! <br>
+                                                    Krilni napadač ima odličnu sezonu iza sebe, postigao je sedam golova i upisao deset asistencija, najviše u Superligi Srbije. <br>
+                                                    Par dana unazad spekulisalo se da je Ovusu na pragu potpisa sa Partizanom, ali očigledno da će crno-beli morati da stanu u red ukoliko žele ovog fudbalera. <br>
+                                                    <iframe src="https://www.youtube.com/embed/4ExO2o5y-KM" class="w-100" height="315px" frameborder="0"></iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="card-footer pl-1 text-muted p-0">
+                               <small> Pre 18 sati</small>
+                            </div>
+                </div>
+                <div class="card  col-12 col-lg-4 px-2 pb-0 bg-light">
+                            <div class="card-header text-center">Planeta <span class="badge badge-pill badge-info">NOVO</span> </div>
+                            <h5 class="card-title text-center">KINA IZGRADILA NAJVEĆI AERODROM NA SVETU: (VIDEO)</h5>
+                            <img class="card-img-top" src="img/card3.jpg" alt="">
+                            <div class="card-body">
+                                <button type="button" class="form-control btn btn-info rounded m-0" data-toggle="modal" data-target="#modalCard3">Saznaj više</button>
+                                    <div class="modal fade" id="modalCard3">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">KINA IZGRADILA NAJVEĆI AERODROM NA SVETU</h4>
+                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Danas počinju prvi probni letovi na novom međunarodnom aerodromu u Pekingu. <br>
+                                                    Aerodrom "morska zvezda" koji se nalazi na 46 kilometara južno od centra Peking i biće najveći aerodrom na svetu. Nalazi se na granici 
+                                                    između okruga Daking i Langfanga, grada u provinciji Hebei i prostire se na 700.000 kvadratnih metara što je otprilike veličine 100 
+                                                    fudbalskih terena. <br> Enterijer će imati bašte, ukrašene pejzaže, ali i odvojene putničke površine za domaće i međunarodne putnike.
+                                                    Imaće četiri piste i 620.000 letova godišnje. Na godišnjem nivou će moći da opsluži do 100 miliona putnika i 4 miliona tona tereta godišnje.
+                                                    Probni letovi neće biti klasično komercijalni.Avioni kineskih kompanija sleteće na aerodrom, a probni letovi će trajati oko sat vremena. <br>
+                                                    Četiri piste ovog aerodroma prošle nedelje prošle su inspekcijsku kontrolu, a svi građevinski i tehničko-infrastrukturni radovi idu po planu. 
+                                                    Terminal koji je dizajnirala Zaha Hadid od 700.000 kvadratnih metara i biće podeljen na deo za domaće i medunarodne letove. <br> Površinski, biće to 
+                                                    najveći aerodrom na svetu. Očekuje se da će svi radovi biti privedeni kraju do 30. juna, a otvaranje je planirano za 30. septembar. <br>
+                                                    Već 2021. godine trebalo bi da ovu vazdušnu luku koristi 45 miliona putnika, a do 2025. čak 72 miliona.
+                                                <iframe width="420" height="315"
+                                                src="https://www.youtube.com/embed/Lr1uz2qeThY" class="w-100">
+                                                </iframe>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <p class="card-footer pl-1 m-0 p-0"><small class="text-muted">Pre 12 sati</small></p>
+                </div>
+                <div class="card col-12 col-lg-4 px-2 pb-0 bg-light">
+                        <div class="card-header text-center">Zdravlje <span class="badge badge-pill badge-warning">NOVO</span> </div>
+                        <h5 class="card-title text-center">OVO JE JEDINO PIĆE KOJE BI TREBALO DA PIJETE PRED SPAVANJE! </h5>
+                        <img class="card-img-top" src="img/card4.jpg" alt="">
+                        <div class="card-body">
+                            <button type="button" class="form-control btn btn-info rounded m-0" data-toggle="modal" data-target="#modalCard4">Saznaj više</button>
+                                <div class="modal fade" id="modalCard4">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">OVO JE JEDINO PIĆE KOJE BI TREBALO DA PIJETE PRED SPAVANJE!</h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <div class="modal-body">Problemi sa nesanicom posle samo jedne čaše ovog slatkog napitka će nestati, lepše ćete sanjati, a za sve to možete sa zahvaliti ovim slatkim sastojcima!
+                                                    Sastojci:           <br>                                                                                            
+                                                    1 šolja mleka              <br>                                                                                         
+                                                    1 kašičica meda          <br>                                                                                              
+                                                    2 kapi ekstrakta od vanile      <br>                                                                                                
+                                                    pola kašičice cimeta           <br>                                                                                                                                                 
+                                                   Priprema:   <br>                                                                                                                 
+                                                    Stavite šolju mleka u mikrotalasnu da se greje dok ne postane vrelo i na vrhu se ne stvori pena, oko 3 minuta.
+                                                     Zatim, u njega dodajte med i vanilu, a pre služenja pospite napitak cimetom.
+                                                <img src="img/card4a.jpg" class="img img-fluid w-100" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <p class="card-footer pl-1 m-0 p-0"><small class="text-muted">Pre 22 sata</small></p>
+                </div>
+        </div>
+    </div>
+
+
+    <footer class="bg-dark text-warning container-fluid pt-3 pb-1 w-100" >
+            <span class="mr-5"> <h6 class="d-inline-block">&copy Report, Savski Nasip 7, 11070 Novi Beograd
+                <img src="img/favicon.png" alt=""> </h6></span>
+            <span class="d-inline-block">
+                <a href="https://chats.viber.com/telegraf.rs/en" target="_blank">
+                    <button type="button" class="btn btn-warning rounded-circle  border-0"> <i class="fab fa-viber"></i></button> 
+                </a>
+                <a href="https://twitter.com/telegrafrs" target="_blank">
+                    <button type="button" class="btn btn-warning rounded-circle  border-0"><i class="fab fa-twitter-square"></i></button> 
+                </a>
+                <a href="https://www.youtube.com/telegrafrstv" target="_blank">
+                    <button type="button" class="btn btn-warning rounded-circle  border-0"><i class="fab fa-youtube" ></i></button> 
+                </a>
+                <a href="https://www.facebook.com/telegraf.rs/" target="_blank">
+                    <button type="button" class="btn btn-warning rounded-circle  border-0"><i class="fab fa-facebook-square"></i></button> 
+                </a> 
+                <a href=" redakcija@telegraf.rs" target="_blank">
+                    <button type="button" class="btn btn-warning rounded-circle  border-0"><i class="fas fa-envelope-square"></i></button> 
+                </a> 
+            </span>
+    </footer>
+    <script src="https://code.jquery.com/jquery.js">
+    </script>
+    <script src="js/bootstrap.min.js">
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

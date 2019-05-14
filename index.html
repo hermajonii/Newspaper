@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Report</title>
+    <link href="css/bootstrap.min.css"  rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stil.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body class="bg-secondary">
+    <nav class="navbar navbar-expand-md bg-dark p-0">
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+                    <i class="fas fa-bars text-light" size="3" ></i>
+                </button>
+                <a href="#"> <img height="70px" src="img/logo.png" >   </a>       
+                <div class="btn-group d-flex justify-content-center pr-2" role="group">
+                        <a href="index.html"> 
+                            <button type="button" class="btn btn-secondary mr-1 ml-1" data-toggle="modal" data-target="#modalniProzor"><i class="fas fa-home"></i></button>
+                        </a>
+                            <button type="button" class="btn btn-secondary rounded" data-toggle="modal" data-target="#modalniProzor"><i class="far fa-comment-dots"></i></button>
+                            <div class="modal fade" id="modalniProzor">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Ostavite vaš komentar</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <textarea name="" id="" class="form-control" cols="40" rows="8"></textarea>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Pošaljite</button>
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                    </div>
+                <div class="collapse navbar-collapse" id="collapse_target">             
+                    <ul class="navbar-nav p-0 m-0 indeks">
+                        <li class="nav-item">
+                            <a class="nav-link rounded text-secondary d-flex justify-content-center px-1" href="najnovije.html"><h6 class="m-0 mr-1 d-inline"><em> <strong>Najnovije vesti </strong></em></h6><span class="badge badge-danger pb-md-1 m-0 ">NOVO!</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link rounded text-secondary  d-flex justify-content-center px-1" href="najpopularnije1.html"><h6 class="m-0"> <em> <strong>Najpopularnije</strong></em></h6></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link rounded text-secondary  d-flex justify-content-center px-1" href="horoskop.html"> <h6 class="m-0"><em> <strong>Horoskop</strong></em></h6></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link rounded text-secondary  d-flex justify-content-center px-1" href="kontakt.html"> <h6 class="m-0"><em> <strong>Kontakt</strong></em></h6></a>
+                        </li>
+                    </ul>
+                </div>  
+    </nav>
+
+    <div class="container container-md-fluid p-0 bg-secondary" style=" box-shadow: 0px 0px 20px black; background: url(img/novine2.jpg); background-size:100%; background-repeat: repeat-y;" >
+        <p class="text-light vrati fixed-bottom p-2 bg-dark d-flex justify-content-center font-italic" style="opacity:0; margin-bottom: 0px;" onclick="vrati()"> &#8593 Vrati se na početak
+        </p>
+        <div class="col-12 p-0 d-md-none d-lg-inline-block" >            
+                <marquee class="bg-dark text-light p-0 mb-0 pb-2" scrollamount="5" behavior="scroll" direction="left" >                        
+                        <span class="badge badge-info mr-2">NOVO!</span>
+                       <a style="text-decoration: none" href="najpopularnije1.html#galerija1"> <span class="hover text-light">Najnovije slike sa Met Gale održane u muzeju umetnosti</span></a>
+                        <span class="badge badge-danger mr-2">NOVO!</span>
+                        <a style="text-decoration: none" href="najpopularnije1.html#galerija2"> <span class="hover text-light">Naučite kako da uklopite široke pantalone u vaš stajling</span></a>
+                        <span class="badge badge-info mr-2">NOVO!</span>
+                        <a style="text-decoration: none" href="najpopularnije1.html#galerija1"> <span class="hover text-light">Najnovije slike sa Met Gale održane u muzeju umetnosti</span></a>
+                        <span class="badge badge-danger mr-2">NOVO!</span>
+                        <a style="text-decoration: none" href="najpopularnije1.html#galerija2"> <span class="hover text-light">Naučite kako da uklopite široke pantalone u vaš stajling</span></a>
+                        <span class="badge badge-info mr-2">NOVO!</span>
+                        <a style="text-decoration: none" href="najpopularnije1.html#galerija1"> <span class="hover text-light">Najnovije slike sa Met Gale održane u muzeju umetnosti</span></a>
+                        <span class="badge badge-danger mr-2">NOVO!</span>
+                        <a style="text-decoration: none" href="najpopularnije1.html#galerija1"> <span class="hover text-light">Naučite kako da uklopite široke pantalone u vaš stajling</span></a>                      
+                </marquee>
+                
+        </div>                           
+        <h4 class="bg-dark text-light p-2 mt-0 d-flex justify-content-center font-italic" style="height:45px;" id="report"></h4>
+        <div class="row m-1 ">
+                    <div id="carouselExampleIndicators" class="carousel slide col-lg-7 col-12 rounded p-0  m-0  mb-5 border" style="box-shadow: 0px 0px 30px black;" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img class="img d-block w-100 rounded" height="400px" src="img/brienne.jpg" alt="First slide">
+                                <div class="carousel-caption d-md-block text-light" style="background-color:rgba(24, 21, 21, 0.575)" >
+                                   <a href="najnovije.html#red1" class="text-light" >
+                                    <h5>Pažnja, spojleri:</h5>
+                                    <p>Zbog nove epizode "Igre prestola" fanovi u suzama. Tormund ti to nikada ne bi uradio, Velika ženo</p>
+                                    </a>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img class="img d-block w-100 rounded" height="400px" src="img/spiderman.jpg" alt="Second slide">
+                                <div class="carousel-caption d-md-block text-light" style="background-color:rgba(24, 21, 21, 0.575)">
+                                    <a href="najnovije.html#red2" class="text-light" >
+                                    <h5>Preminuo tvorac "Spajdermena":</h5>
+                                    <p>Sardžent je umro u svojoj 92. godini života u svojoj kući u Sijetlu. Radio je i na filmu "Zvezda je rođena"</p>
+                                    </a>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img class="img d-block w-100 rounded" height="400px" src="img/ivo.jpg" alt="Third slide">
+                                <div class="carousel-caption d-md-block text-light" style="background-color:rgba(24, 21, 21, 0.575)">
+                                        <a href="najnovije.html#red3" class="text-light" >
+                                        <h5>Kako je Ivo Andrić govorio o ženskom brbljanju: </h5>
+                                        <p>To su razgovori puni zmijskog siktanja, uspijanja, a žene su kratke pameti i suva srca</p>
+                                        </a>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                    <img class="img d-block w-100 rounded" height="400px" src="img/it.jpg" alt="Third slide">
+                                    <div class="carousel-caption d-none d-md-block text-light" style="background-color:rgba(24, 21, 21, 0.575)">
+                                        <a href="najnovije.html#red5" class="text-light" >
+                                            <h5>"To: poglavlje 2": </h5>
+                                            <p>Trejler za horor film je objavljen i zastrašujuć: Jezivi klovn je ponovo u gradu </p>
+                                        </a>
+                                    </div>
+                                  </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                    </div>
+                    <div class="col-lg-5 col-12 ml-0 mt-3 pt-0 px-5">
+                            <div class="card bg-light pt-0 p-2 m-0">
+                              <div class="card-body pt-0 p-2 m-0 ">
+                                <h5 class="card-title border-bottom justify-content-center d-flex">NAJNOVIJE VESTI:</h5>
+                                <p class="card-text border-bottom"><a class="text-secondary d-flex justify-content-center" href="najnovije.html#red1">Nove epizoda Game of Thrones-a izaziva suze</a></p>
+                                <p class="card-text border-bottom"><a class="text-secondary d-flex justify-content-center" href="najnovije.html#red2">Preminuo tvorac Spajdermana</a></p>
+                                <p class="card-text border-bottom"><a class="text-secondary d-flex justify-content-center" href="najnovije.html#red3">Ivo Andric o zenskom brbljanju</a></p>
+                                <p class="card-text border-bottom"><a class="text-secondary d-flex justify-content-center" href="najnovije.html#red4">Gde su granice naših identiteta?</a></p>
+                                <p class="card-text border-bottom"><a class="text-secondary d-flex justify-content-center" href="najnovije.html#red5">Trejler za horor film "To: poglavlje 2"</a></p>
+                                <p class="card-text border-bottom"><a class="text-secondary d-flex justify-content-center" href="najnovije.html#red6">Odlaže se dolazak novog "Avatara"</a></p>
+                                <p class="card-text border-bottom"><a class="text-secondary d-flex justify-content-center" href="najnovije.html#red7">Ceo dan u bioskopu, samo za jedan film</a></p>
+                                
+                                <a href="najnovije.html" class="btn btn-danger form-control p-2">Vidi sve najnovije &#8649</a>
+                              </div>
+                            </div>                          
+                    </div>
+        </div>   
+        <div class="card-columns ml-1">
+                <div class="card bg-light px-2 pb-0">
+                    <div class="card-header text-center">Kultura <span class="badge badge-pill badge-success">NOVO</span> </div>
+                    <h5 class="card-title text-center">Vodimo vas u bioskop</h5>
+                    <img class="card-img-top" src="img/card1.jpg" alt="">
+                    <div class="card-body">
+                        <p class="card-text mb-0 text-center ">Teroristički napad na ostrvu Uteja u blizini prestonice Oslo 2011. godine ostao je u sećanjima širom sveta, a po prvi put u Norveškoj snimljen je igrani film o ovom nemilom događaju.</p>
+                        <button type="button" class="form-control btn btn-warning rounded m-0" data-toggle="modal" data-target="#modalCard1">Saznaj više</button>
+                            <div class="modal fade" id="modalCard1">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Vodimo vas u bioskop</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                                Teroristički napad na ostrvu Uteja u blizini prestonice Oslo 2011. godine ostao je u sećanjima širom sveta, a po prvi put u Norveškoj snimljen
+                                                 je igrani film o ovom nemilom događaju. Ostvarenje vodećeg savremenog reditelja Erika Popea „Uteja - 22. jul“ naći će se na bioskopskom 
+                                                 platnu od 9 maja. <br>
+                                                Priča prati osamnaestogodišnju devojku Kaju i njene prijatelje koji su meta terorističkog napada i koji mahnito i u strahu za sopstveni
+                                                 život, pokušavaju da pobegnu na sigurno i spasu se.  <br>                                             
+                                                Film je zasnovan na istinitim iskazima preživelih. Ručna kamera i snimljanje u pokretu daju osećaj prave reportaže, ipak nije reč o 
+                                                dokumentarcu već o igranom filmu tokom kojeg je publika jednako zbunjena onim šta se dešava kao i glavni lik.           <br>                                     
+                                                Film "Uteja - 22. jul" je zasnovan na temeljnim istraživanjima i intervjuima koje je reditelj i scenarista Erik Pope uradio sa 20 mladih
+                                                 ljudi koji su preživeli taj dan na ostrvu s namerom da prikaže strašan događaj iz perspektive žrtava. Više od dve godine reditelj je 
+                                                 pokušavao da pronađe način kako da ispriča ovaj tragičan događaj.                                           <br>     
+                                                „Želeo sam da ispričam priču sa stanovišta mladih koji su preživeli. Neki ljudi kažu da je još uvek rano za tu vrstu prikaza,
+                                                 a drugi se pitaju: A, kada je pravo vreme?“ rekao je reditelj.                                               
+                                                Dva teroristička napada u Norveškoj dogodila su se 2011. godine, na omladinskom letnjem kampu na ostrvu Uteja nedaleko od prestonice
+                                                 Oslo, kao i u samoj prestonici i taj dan na smrt je stradalo 77 ljudi.                                             <br>
+                                                 <img class="img-fluid w-100" src="img/card1.jpg" alt="">
+                                                Mi vas vodimo na projekciju filma večeras od 19.20 (Kombank dvorana). Pošaljite nam danas mejl na poklanjamo@ringier.rs do 16 sati.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="card-footer pl-1 text-muted p-0">
+                       <small> Pre 1 sat</small>
+                    </div>
+                </div>
+                <div class="card bg-light px-2 pb-0">
+                        <div class="card-header text-center">Vesti <span class="badge badge-pill badge-info">NOVO</span> </div>
+                        <h5 class="card-title text-center">POŽAR U KRALJEVU: (FOTO)</h5>
+                        <img class="card-img-top" src="img/card6.jpg" alt="">
+                        <div class="card-body">
+                            <p class="card-text mb-0 text-center ">Vatra zahvatila prodavnicu i kuću, vatrogasci sprečili širenje.</p>
+                            <button type="button" class="form-control btn btn-warning rounded m-0" data-toggle="modal" data-target="#modalCard6">Saznaj više</button>
+                                <div class="modal fade" id="modalCard6">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">POŽAR U KRALJEVU:</h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Brzom intervencijom vatrogasaca, sprečeno je širenje požara u Dositejevoj ulici u Kraljevu, 
+                                                u blizini Gimnazije. Naime, negde malo pre 16.00 sati zapalili su se nekadašnja prodavnica i kuća u čijem 
+                                                sklopu se ona nalazila. <br>
+                                                Plamen požara je zahvatio krov kuće a koliko je vatra bila visoka, pokazuje i podatak da se zapalilo drvo koje se nalazilo u blizini kuće. <br>
+                                                - Izašli smo na pauzu u dvorište i videli ogroman crni dim, plamen i vatrogasce kako gase požar. Neverovatno je da se i stablo zapalilo - kaže jedan od učenika Gimnazije. <br>
+                                                <img class="img-fluid w-100" src="img/card6.jpg" alt=""> 
+                                                Mi vas vodimo na projekciju filma večeras od 19.20 (Kombank dvorana). Pošaljite nam danas mejl na poklanjamo@ringier.rs do 16 sati. <br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="card-footer pl-1 text-muted p-0">
+                           <small> Pre 32 sat</small>
+                        </div>
+                </div>               
+                <div class="card px-3 pb-0 bg-light">
+                        <div class="card-header text-center">Vesti <span class="badge badge-pill badge-info">NOVO</span> </div>
+                        <h5 class="card-title text-center">Pogledajte novi insert iz filma "X-Men: Mračni Feniks" (VIDEO)</h5>
+                        <img class="card-img-top" src="img/card2.jpg" alt="">
+                        <div class="card-body">
+                            <button type="button" class="form-control btn btn-warning rounded m-0" data-toggle="modal" data-target="#modalCard2">Pogledaj</button>
+                                <div class="modal fade" id="modalCard2">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Pogledajte novi insert iz filma "X-Men: Mračni Feniks"</h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                    <iframe width="420" height="315"
+                                                    src="https://www.youtube.com/embed/UXdDkyA1B_0" class="w-100">
+                                                    </iframe>                                                       
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="card-footer pl-1 p-0 text-muted">
+                         <small>  Pre 4 sata</small> 
+                        </div>
+                </div>
+                <div class="card px-2 pb-0 bg-light">
+                        <div class="card-header text-center">Zdravlje <span class="badge badge-pill badge-warning">NOVO</span> </div>
+                        <h5 class="card-title text-center">OVO JE JEDINO PIĆE KOJE BI TREBALO DA PIJETE PRED SPAVANJE! </h5>
+                        <img class="card-img-top" src="img/card4.jpg" alt="">
+                        <div class="card-body">
+                            <button type="button" class="form-control btn btn-warning rounded m-0" data-toggle="modal" data-target="#modalCard4">Saznaj više</button>
+                                <div class="modal fade" id="modalCard4">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">OVO JE JEDINO PIĆE KOJE BI TREBALO DA PIJETE PRED SPAVANJE!</h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <div class="modal-body">Problemi sa nesanicom posle samo jedne čaše ovog slatkog napitka će nestati, lepše ćete sanjati, a za sve to možete sa zahvaliti ovim slatkim sastojcima!
+                                                    Sastojci:           <br>                                                                                            
+                                                    1 šolja mleka              <br>                                                                                         
+                                                    1 kašičica meda          <br>                                                                                              
+                                                    2 kapi ekstrakta od vanile      <br>                                                                                                
+                                                    pola kašičice cimeta           <br>                                                                                                                                                 
+                                                   Priprema:   <br>                                                                                                                 
+                                                    Stavite šolju mleka u mikrotalasnu da se greje dok ne postane vrelo i na vrhu se ne stvori pena, oko 3 minuta.
+                                                     Zatim, u njega dodajte med i vanilu, a pre služenja pospite napitak cimetom.
+                                                <img src="img/card4a.jpg" class="img img-fluid w-100" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <p class="card-footer pl-1 m-0 p-0"><small class="text-muted">Pre 22 sata</small></p>
+                </div>
+                <div class="card px-2 pb-0 bg-light">
+                <div class="card-body pt-0 p-2  m-0 text-center">
+                        <h5 class="card-title text-light  bg-danger rounded  mb-1 justify-content-center d-flex">TEMPERATURA:</h5>
+                        <p class="card-text border-bottom bg-light rounded m-0 ">Danas: 20˚C</p>
+                        <p class="card-text border-bottom bg-light rounded m-0">Sutra: 16˚C</p>
+                        <p class="card-text border-bottom bg-light rounded m-0">Četvrtak: 11˚C</p>
+                        <p class="card-text border-bottom bg-light rounded m-0">Petak: 16˚C</p>
+                        <p class="card-text border-bottom bg-light rounded m-0">Subota: 18˚C</p>
+                        <p class="card-text border-bottom bg-light rounded m-0">Nedelja: 15˚C</p>
+                        <p class="card-text border-bottom bg-light rounded m-0">Ponedeljak: 9˚C</p>                   
+                        <a href="vremenska.html" class="btn btn-danger form-control mt-1">Vidi prognozu &#8649</a>
+                </div>
+                </div>
+                <div class="card bg-light px-2 pb-0">
+                        <div class="card-header text-center">Sport <span class="badge badge-pill badge-danger">NOVO</span> </div>
+                        <h5 class="card-title text-center">SPREMA SE TRANSFER BOMBA U SUPERLIGI SRBIJE: (VIDEO)</h5>
+                        <img class="card-img-top" src="img/card5.jpg" alt="">
+                        <div class="card-body">         
+                            <p class="card-text mb-0 text-center ">Fudbaler Čukaričkog na meti Borusije Dortmund! Partizan će morati da stane u red! (VIDEO).</p>
+                            <button type="button" class="form-control btn btn-warning rounded m-0" data-toggle="modal" data-target="#modalCard5">Saznaj više</button>
+                                <div class="modal fade" id="modalCard5">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">SPREMA SE TRANSFER BOMBA U SUPERLIGI SRBIJE:</h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Svi smo navikli na priču kako evropski velikane žele fudbalere večitih rivala Zvezde i Partizana, ali ovog puta priča je drugačija. <br>
+                                                Možda je tačna tvrdnja da su igrači Zvezde i Partizana najcenjeni u Superligi Srbije, ali i po ostalim superligašima može da se nađe par kvalitetnih igrača koji još uvek nisu potpisali za ova dva fudbalska giganta.   <br>    
+                                                Prema navodima portala Gana Soker Net, fudbaler Čukaričkog Samuel Ovusu se nalazi na meti Borusije iz Dortmunda! <br>
+                                                Krilni napadač ima odličnu sezonu iza sebe, postigao je sedam golova i upisao deset asistencija, najviše u Superligi Srbije. <br>
+                                                Par dana unazad spekulisalo se da je Ovusu na pragu potpisa sa Partizanom, ali očigledno da će crno-beli morati da stanu u red ukoliko žele ovog fudbalera. <br>
+                                                <iframe src="https://www.youtube.com/embed/4ExO2o5y-KM" class="w-100" height="315px" frameborder="0"></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="card-footer pl-1 text-muted p-0">
+                           <small> Pre 18 sati</small>
+                        </div>
+                </div>
+                <div class="card px-2 pb-0 bg-light">
+                        <div class="card-header text-center">Planeta <span class="badge badge-pill badge-info">NOVO</span> </div>
+                        <h5 class="card-title text-center">KINA IZGRADILA NAJVEĆI AERODROM NA SVETU: (VIDEO)</h5>
+                        <img class="card-img-top" src="img/card3.jpg" alt="">
+                        <div class="card-body">
+                            <p class="card-text">Morska zvezda se prostire na površini koja je kao 100 FUDBALSKIH TERENA, četiri piste spremne za probne letove! </p>
+                            <button type="button" class="form-control btn btn-warning rounded m-0" data-toggle="modal" data-target="#modalCard3">Saznaj više</button>
+                                <div class="modal fade" id="modalCard3">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">KINA IZGRADILA NAJVEĆI AERODROM NA SVETU</h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Danas počinju prvi probni letovi na novom međunarodnom aerodromu u Pekingu. <br>
+                                                Aerodrom "morska zvezda" koji se nalazi na 46 kilometara južno od centra Peking i biće najveći aerodrom na svetu. Nalazi se na granici 
+                                                između okruga Daking i Langfanga, grada u provinciji Hebei i prostire se na 700.000 kvadratnih metara što je otprilike veličine 100 
+                                                fudbalskih terena. <br> Enterijer će imati bašte, ukrašene pejzaže, ali i odvojene putničke površine za domaće i međunarodne putnike.
+                                                Imaće četiri piste i 620.000 letova godišnje. Na godišnjem nivou će moći da opsluži do 100 miliona putnika i 4 miliona tona tereta godišnje.
+                                                Probni letovi neće biti klasično komercijalni.Avioni kineskih kompanija sleteće na aerodrom, a probni letovi će trajati oko sat vremena. <br>
+                                                Četiri piste ovog aerodroma prošle nedelje prošle su inspekcijsku kontrolu, a svi građevinski i tehničko-infrastrukturni radovi idu po planu. 
+                                                Terminal koji je dizajnirala Zaha Hadid od 700.000 kvadratnih metara i biće podeljen na deo za domaće i medunarodne letove. <br> Površinski, biće to 
+                                                najveći aerodrom na svetu. Očekuje se da će svi radovi biti privedeni kraju do 30. juna, a otvaranje je planirano za 30. septembar. <br>
+                                                Već 2021. godine trebalo bi da ovu vazdušnu luku koristi 45 miliona putnika, a do 2025. čak 72 miliona.
+                                            <iframe width="420" height="315"
+                                            src="https://www.youtube.com/embed/Lr1uz2qeThY" class="w-100">
+                                            </iframe>    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <p class="card-footer pl-1 m-0 p-0"><small class="text-muted">Pre 12 sati</small></p>
+                </div>
+        </div>          
+    </div>
+    
+    <footer class="bg-dark text-light container-fluid pt-3 pb-1 w-100" >
+                <span class="mr-5"> <h6 class="d-inline-block">&copy Report, Savski Nasip 7, 11070 Novi Beograd
+                     <img src="img/favicon.png" alt=""></h6></span>
+                <span class="d-inline-block" >
+                    <a href="https://chats.viber.com/telegraf.rs/en" target="_blank">
+                        <button type="button" class="btn btn-light rounded-circle"> <i class="fab fa-viber"></i></button> 
+                    </a>
+                    <a href="https://twitter.com/telegrafrs" target="_blank">
+                        <button type="button" class="btn btn-light rounded-circle"><i class="fab fa-twitter-square"></i></button> 
+                    </a>
+                    <a href="https://www.youtube.com/telegrafrstv" target="_blank">
+                        <button type="button" class="btn btn-light rounded-circle"><i class="fab fa-youtube" ></i></button> 
+                    </a>
+                    <a href="https://www.facebook.com/telegraf.rs/" target="_blank">
+                        <button type="button" class="btn btn-light rounded-circle"><i class="fab fa-facebook-square"></i></button> 
+                    </a> 
+                    <a href=" redakcija@telegraf.rs" target="_blank">
+                        <button type="button" class="btn btn-light rounded-circle"><i class="fas fa-envelope-square"></i></button> 
+                    </a> 
+                </span>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery.js">
+    </script>
+    <script src="js/bootstrap.min.js">
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+.nav-item a:hover{
+    background-color: #ffc107 ;
+    color: rgb(41, 35, 35)  !important;
+    transition:1s;
+}
+.indeks a:hover, .hover:hover{
+    background-color: #868e96 ;
+    color: rgb(41, 35, 35)  !important;
+}
+.najpopularnije a:hover{
+    background-color: whitesmoke ;
+    color: rgb(41, 35, 35)  !important;
+}
+.m{
+    z-index: 3;
+}
+.m a{
+    text-decoration: none;
+}
+footer button:hover{
+    font-size: 1.45em;
+    color:  #ffc107 !important;
+    background-color: white !important;
+    transition:0.5s;  
+}
+table tr td{
+    padding: 2px;
+   color: rgb(24, 22, 22);    
+}
+.card{
+    background-color: #6e7279;
+}
+.card:hover{
+    box-shadow: 3px 3px 6px rgb(77, 70, 70);
+}
+[alt="beograd"]{
+   transition: 1s;
+    filter: blur(1px);
+}
+[alt="beograd"]:hover{
+    transform: scale(1.2);
+    filter: blur(0px);
+}
+.s{    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+}
+.siva{
+    background-color:#dee2e7;
+    opacity: 0.1;
+    transition: opacity 1.9s;
+}
+footer{
+    position: relative;
+    bottom: 4000px;
+    opacity:0;
+    transition: bottom 1.5s, opacity 2.3s;
+}
+#desno{
+    position: relative;
+    right:-80%;
+}
+#prvi, #drugi,#treci{
+    position: relative;
+    left:-80%;
+}
+#frmkontakt label{
+    width:17%;
+}
+#frmkontakt input{
+    background-color: transparent;
+    border: none;
+    border-bottom:1px solid white; 
+    transition: 1s;
+}
+#frmkontakt input:focus{
+    color:white;
+    outline: none;
+    border-bottom:1px solid #ffc107;
+}
+#report{
+    opacity: 0.7;
+}
+@media screen and (max-width: 520px){
+    div.carousel-inner{
+        height:370px !important;
+    }
+    span.galerija{
+        font-size:12px !important;
+        bottom:10px;
+    }
+}
+#uKrug{
+    position: relative;
+    left:-90%;
+}
+span.galerija{
+    position: relative;
+    bottom:160px;
+    left:30%;
+    box-shadow: 0px 0px 22px white;
+    transition: 1s;
+}
+.slikaZaModal{
+   filter: grayscale(0%);
+   transition: 0.6s;
+   box-shadow: 0px 0px 40px black;
+}
+.slikaZaModal:hover, s{
+    filter: grayscale(100%);
+}
+span.galerija:hover{
+    transform: scale(1.1);
+}
+.back{
+    background-color: rgb(24, 21, 21);
+    opacity: 0.8;
+}
+body.horoskop footer span h6, .horoskop footer button:hover, nav a{
+   color: rgb(226, 113, 187) !important;
+}
+body.horoskop footer span a button{
+    background-color: rgb(226, 113, 187);
+}
+body.horoskop footer a:hover{
+    background-color: #343a40!important;
+}
+.horoskopSlike{
+    left:100%;
+}
+.fix{
+    top:10%;
+}
+p.back:focus{
+    opacity: 1 !important;
+}
+@media (max-width: 768px) {
+    .card-columns {
+        column-count: 2;
+    }
+}
+@media (max-width: 576px) {
+    .card-columns {
+        column-count: 1;
+    }
+}
