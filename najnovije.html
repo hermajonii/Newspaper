@@ -6,359 +6,472 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Najnovije vesti</title>
     <link href="css/bootstrap.min.css"  rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="stil.css" />
+    <link rel="stylesheet" type="text/css" href="css/stil.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
-<body class="bg-light">
-    <nav class="navbar navbar-expand-md bg-dark p-0">
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
-            <i class="fas fa-bars text-light" size="3" ></i>
-        </button>
-        <a href="#"> <img height="70px" src="img/logo.png" >   </a>       
-        <div class="btn-group d-flex justify-content-center pr-2" role="group">
-                <a href="index.html"> 
-                    <button type="button" class="btn btn-secondary mr-1 ml-1" data-toggle="modal" data-target="#modalniProzor"><i class="fas fa-home"></i></button>
-                </a>
-                    <button type="button" class="btn btn-secondary rounded" data-toggle="modal" data-target="#modalniProzor"><i class="far fa-comment-dots"></i></button>
-                    <div class="modal fade" id="modalniProzor">
-                        <div class="modal-dialog modal-md">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h4 class="modal-title">Ostavite vaš komentar</h4>
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                </div>
-                                <div class="modal-body">
-                                        <textarea name="" id="" class="form-control" cols="40" rows="8"></textarea>                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Pošaljite</button>
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
-                                </div>
-                            </div>
+<body>
+    <nav class="navbar navbar-expand-md bg-primary">
+        <div class="container-fluid bg-primary py-1">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-light fas fa-bars"></span>
+            </button>
+            <a href="index.html"><img height="70px" src="img/logo_transparent.png"></a>       
+            <div class="btn-group d-flex justify-content-center pr-2" role="group">
+                <a href="index.html"><button type="button" class="btn btn-primary text-light mr-1 ml-1"><i class="fas fa-home"></i></button></a>
+                <button type="button" class="btn btn-primary text-light" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="far fa-comment-dots"></i></button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Ostavite vaš komentar</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <textarea name="" id="" class="form-control" cols="40" rows="8"></textarea>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zatvori</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Pošaljite</button>
                         </div>
                     </div>
-                
+                    </div>
+                </div>
             </div>
-        <div class="collapse navbar-collapse" id="collapse_target">   
-            <ul class="navbar-nav p-0 m-0 indeks">
-                <li class="nav-item">
-                    <a class="nav-link rounded text-dark bg-secondary d-flex justify-content-center px-1" href="najnovije.html"><h6 class="m-0 mr-1 d-inline"><em> <strong>Najnovije vesti </strong></em></h6><span class="badge badge-primary  m-0 ">NOVO!</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link rounded text-secondary  d-flex justify-content-center px-1" href="najpopularnije1.html"><h6 class="m-0"> <em> <strong>Najpopularnije</strong></em></h6></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link rounded text-secondary  d-flex justify-content-center px-1" href="horoskop.html"> <h6 class="m-0"><em> <strong>Horoskop</strong></em></h6></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link rounded text-secondary  d-flex justify-content-center px-1" href="kontakt.html"> <h6 class="m-0"><em> <strong>Kontakt</strong></em></h6></a>
-                </li>
-            </ul>
-        </div>  
+            <div class="collapse navbar-collapse text-secondary" id="navbarTogglerDemo01">
+                <ul class="navbar-nav p-1 m-0">
+                    <li class="nav-item">
+                        <a class="nav-link rounded text-light d-flex justify-content-center px-1" href="najnovije.html"><h6 class="m-0 d-inline"> <strong>NAJNOVIJE VESTI</strong></h6><span class="badge bg-danger pb-md-1 m-0 ms-1 ">NOVO!</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link rounded text-light  d-flex justify-content-center px-1" href="najpopularnije.html"><h6 class="m-0">  <strong>NAJPOPULARNIJE</strong></h6></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link rounded text-light  d-flex justify-content-center px-1" href="horoskop.html"> <h6 class="m-0"> <strong>HOROSKOP</strong></h6></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link rounded text-light  d-flex justify-content-center px-1" href="kontakt.html"> <h6 class="m-0"> <strong>KONTAKT</strong></h6></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <div class="container" style="background: url(img/novine2.jpg); background-size:100%; background-repeat: repeat-y; box-shadow: 0px 0px 30px black;">
-        <p class="text-light vrati fixed-bottom p-2 bg-dark d-flex justify-content-center font-italic" style="opacity:0; margin-bottom: 0px;" onclick="vrati()"> &#8593 Vrati se na početak</p>
-        <div class="row">
-                <div class="col-lg-8 col-12">
-                    <div class="row ml-1" tabindex="-1" id="red1">
-                                <div class="col-6 mt-2 p-1 pr-0 bg-light mr-0 border border-light rounded-left">
-                                    <img src="img/brienne.jpg"  style="height:220px !important" class="img img-thumbnail w-100" alt="">
-                                </div>
-                                <div class="col-lg-6 col-5 mt-2 p-1 bg-light ml-0 text-dark border pl-0 border-light rounded-right">
-                                    <h5 class="d-inline-block align-bottom  pb-1">Pažnja, spojleri: Zbog nove epizode "Igre prestola" fanovi u suzama. Tormund ti to nikada ne bi uradio, Velika ženo</h5 >
-                                        <button class="btn-danger btn d-block button" data-target="#clanak1" id="button1" data-toggle="collapse">Prikaži više</button>
-                                </div>   
-                                <div class="col-lg-12 col-11 bg-light px-2 py-3 text-dark collapse border " tabindex="-1" id="clanak1" > 
-                                        Nećemo vam otkriti najvažnije detalje, samo onaj koji je slomio jedno srce na ekranu i, sudeći po reakcijama na društvenim mrežama, hiljade srca ispred njega.
-                                        Uprkos epskoj bici u "Dugoj noći", 4. epizoda osme sezone, nazvana "Poslednji Starkovi", ličila je više na "Igru prestola" nego išta što smo videli od početka emitovanja poslednjeg serijala. <br> Servirala nam je sahranu za predjelo, ljubav, seks i politiku kao glavno jelo, izdaju u najavi za dezert i jednu ludu kraljicu za poneti. I smrt dva važna lika.
-                Nećemo vam otkriti najvažnije detalje, ali ko nije gledao epizodu može ovde da stane, jer sledi spojler spojlera: snimci koji su u nedelju veče procurili na društvenim mrežama jesu bili iz 4. epizode "Igre prestola", koliko god da su se fanovi nadali u suprotno. Dva lika su umrla, a još dva vrlo draga najavila da ih više nećemo videti. <br> Nove smrti su glavna tema na društvenim mrežama (bežite sa njih dok ne odgledate epizodu), ali rame uz rame tu ide i bes fanova što je Brijena plakala.
-                O da, suze gospe od Oporja, novopečenog viteza od Sedam kraljevstava, pogodile su gledaoce koliko i sva ostala radnja zajedno. Žao nam je, ali iz ljubavnog trougla Kraljeubica-Velika žena- Džinoubica istisnuto je odojče diva.  Brijena je izgubila nevinost, a Džejmijeva rečenica: "Nikad nisam spavao sa vitezom" aktivirala je fanove.
-                                </div>
+
+    <div class="container-fluid">
+        <h4 class="text-dark vrati bg-danger fw-bold p-4" onclick="vrati()"><i class="fas fa-chevron-up"></i></h4>
+
+        <div class="row mt-2">
+            <div class="col-lg-8 col-12">
+                <div class="row bg-light border border-light rounded mt-1 ms-1" tabindex="-1" id="red1">
+                    <div class="col-lg-3 col-md-6 mt-2 p-1 pr-0 mr-0 rounded-left">
+                        <img src="img/brienne.jpg"  style="height:220px !important" class="img img-thumbnail w-100" alt="">
                     </div>
-                    <div class="row ml-1" tabindex="-1" id="red2">
-                                <div class="col-6 mt-2 p-1 pr-0 bg-light mr-0 border border-light rounded-left">
-                                    <img src="img/spiderman.jpg" style="height:220px !important" class="img img-thumbnail w-100" alt="">
-                                </div>
-                                <div class="col-lg-6 col-5 mt-2 p-1 bg-light ml-0 text-dark border pl-0 border-light rounded-right">
-                                    <h5 class="d-inline-block align-bottom  pb-1">Preminuo tvorac "Spajdermena": Želeo da mu na nadrgobnoj ploči piše "konačno zaplet"</h5 >
-                                        <button class="btn-danger btn d-block button" data-target="#clanak2" data-toggle="collapse">Prikaži više</button>
-                                </div>    
-                                <div class="col-lg-12 col-11 bg-light px-2 py-3 text-dark collapse border " id="clanak2"> 
-                                        Sardžent je umro u svojoj 92. godini života u svojoj kući u Sijetlu. Radio je i na filmu "Zvezda je rođena"
-                                        Preminuo je Alvin Sardžent, scenarista i dobitnik Oskara.
-                
-                                        Sardžent je umro u svojoj 92. godini života u svojoj kući u Sijetlu, a vest o njegovoj smrti saopštio je producent i prijatelj Pam Vilijams. <br>
-                                        
-                                        Tokom devedestih, Sardžent je napisao scenario za drugi i treći nastavak filma Spajdermen u kome je glumio Tobi Magvajer. 2012. prilagodio je scenario koji je zasnovan na Marvelovom stripu o superheroju Spajdermenu. Naslovnu ulogu je tumačio Endru Garfild. Dobijao je mnoga priznanja, a kolege su govorile da je on i njegov rad od "majstorske klase - savšršenih tonova, besprekorno struktuirani, duhoviti, ljudski , vredni ponovnog gledanja". <br>
-                
-                                        Sardžent je radio i na filmu "Zvezda je rođena" i mnogih drugim.
-                                        
-                                        Oprobao se i u glumi i imao malu ulogu u ratnom filmu iz 1953.
-                                        
-                                        Imao je dve kćeri, ženio se dva puta. <br>
-                                        
-                                        Među citatima koji se pripisuju Sardžentu je o onaj: -Kad umrem, neka na nadgrobnoj ploči piše "konačno zaplet" .
-                                </div>
+                    <div class="col-lg-8 col-md-6 mt-2 p-1 ml-0 text-dark pl-0 rounded-right">
+                        <h5 class="d-inline-block align-bottom pb-1">Pažnja, spojleri: Zbog nove epizode "Igre prestola" fanovi u suzama. Tormund ti to nikada ne bi uradio, Velika ženo</h5 >
+                            Nećemo vam otkriti najvažnije detalje, samo onaj koji je slomio jedno srce na ekranu i, sudeći po reakcijama na društvenim mrežama, hiljade srca ispred njega.
+                            Uprkos epskoj bici u "Dugoj noći", 4. epizoda osme sezone nazvana "Poslednji Starkovi"...
+                        <button class="btn-danger btn d-block prikaziVise" data-bs-target="#clanak1" id="button1" data-bs-toggle="collapse">Prikaži više</button>
+                    </div>   
+                    <div class="col-lg-12 col-11 bg-light px-2 py-3 text-dark collapse border border-light" tabindex="-1" id="clanak1" > 
+                            ... ličila je više na "Igru prestola" nego išta što smo videli od početka emitovanja poslednjeg serijala. <br> Servirala nam je sahranu za predjelo, ljubav, seks i politiku kao glavno jelo, izdaju u najavi za dezert i jednu ludu kraljicu za poneti. I smrt dva važna lika.
+                            Nećemo vam otkriti najvažnije detalje, ali ko nije gledao epizodu može ovde da stane, jer sledi spojler spojlera: snimci koji su u nedelju veče procurili na društvenim mrežama jesu bili iz 4. epizode "Igre prestola", koliko god da su se fanovi nadali u suprotno. Dva lika su umrla, a još dva vrlo draga najavila da ih više nećemo videti. <br> Nove smrti su glavna tema na društvenim mrežama (bežite sa njih dok ne odgledate epizodu), ali rame uz rame tu ide i bes fanova što je Brijena plakala.
+                            O da, suze gospe od Oporja, novopečenog viteza od Sedam kraljevstava, pogodile su gledaoce koliko i sva ostala radnja zajedno. Žao nam je, ali iz ljubavnog trougla Kraljeubica-Velika žena- Džinoubica istisnuto je odojče diva.  Brijena je izgubila nevinost, a Džejmijeva rečenica: "Nikad nisam spavao sa vitezom" aktivirala je fanove.
+                    </div>  
+                </div>
+                <div class="row bg-light border border-light rounded mt-1 ms-1" tabindex="-1" id="red2">
+                    <div class="col-lg-3 col-md-6 mt-2 p-1 pr-0 mr-0 rounded-left">
+                        <img src="img/spiderman.jpg" style="height:220px !important" class="img img-thumbnail w-100" alt="">
                     </div>
-                    <div class="row ml-1" tabindex="-1" id="red3">
-                                <div class="col-6 mt-2 p-1 pr-0 bg-light mr-0 border border-light rounded-left">
-                                    <img src="img/ivo.jpg"  style="height:220px !important" class="img img-thumbnail w-100" alt="">
-                                </div>
-                                <div class="col-lg-6 col-5 mt-2 p-1 bg-light ml-0 text-dark border pl-0 border-light rounded-right">
-                                    <h5 class="d-inline-block align-bottom  pb-1">
-                                            Kako je Ivo Andrić govorio o ženskom brbljanju: To su razgovori puni zmijskog siktanja, uspijanja, a žene su kratke pameti i suva srca
-                                    </h5 >
-                                    <button class="btn-danger btn d-block button" data-target="#clanak3" data-toggle="collapse">Prikaži više</button>
-                                </div>    
-                                <div class="col-lg-12 col-11 bg-light px-2 py-3 text-dark collapse border " id="clanak3"> 
-                                        Nobelovac Ivo Andrić objavio je 1976. godine knjigu "Znakovi pored puta", u kojoj je jedan deo posvetio opisu ženskih razgovora. On zvuk tog čavrljanja poredi i sa palacanjem zmijskih jezika.
-                
-                "Slušam kako četiri žene srednjih godina “razgovaraju“, ne slušajući jedna drugu, ne misleći ni na šta na svetu do na prvu iduću reč koju treba da izgovore, a tim rečima nema kraja ni računa. U stvari, one više pevaju nego što govore, i to sve četiri u jedan glas, kao derviši opijeni sopstvenim dahtanjem i halakanjem. <br>
-                
-                Taj razgovor se kreće na niskom planu malih ogovaranja, suludih nerazumevanja, prozirnih aluzija, i pun je zmijskog siktanja, zagrcavanja, podmitivanja i uspijanja. Četiri stara i bolesna, sobnim vazduhom otrovana papagaja. <br>
-                
-                Možda u silnoj potrebi ovakvih žena za brbljanjem ima - pored kratke pameti i suva srca - nekih ostataka neiživljene erotike. Možda je to (teško njima!) davno ugušen kliktaj devojaštva, ljubavna pesma koju nikad nisu mogle, smele ni umele da zapevaju, i koja sada navire iz njih, ali kao jadna karikatura onoga što je nekad htela da bude, u vidu besmislenog, čudovišnog brbljanja."</div>
-                    </div>
-                    <div class="row ml-1" tabindex="-1" id="red4">
-                                <div class="col-6 mt-2 p-1 pr-0 bg-light border border-light rounded-left">
-                                    <img src="img/clanak4a.jpg" style="height:220px !important"  class="img img-thumbnail w-100" alt="">
-                                </div>
-                                <div class="col-lg-6 col-5 mt-2 p-1 bg-light text-dark border pl-0 border-light rounded-right">
-                                    <h5 class="d-inline-block align-bottom  pb-1">
-                                            Šta je identitet i gde su granice naših identiteta, u kojoj meri je identitet naš izbor, ono na čemu radimo, što menjamo i prilagođavamo, ono u čemu uživamo i nosimo neprimento i čvrsto, a u kojoj meri je identitet ono što nam se nameće?
-                                    </h5>
-                                    <button class="btn-danger btn d-block button" data-target="#clanak4" data-toggle="collapse">Prikaži više</button>
-                                </div>    
-                                <div class="col-lg-12 col-11 bg-light px-2 py-3 text-dark collapse border " id="clanak4"> 
-                                        Šta je identitet i gde su granice naših identiteta, u kojoj meri je identitet naš izbor, ono na čemu radimo, 
-                                        što menjamo i prilagođavamo, ono u čemu uživamo i nosimo neprimetno i čvrsto? <br>
-                                        Tokom ovogodišnje Turneje filmskog festivala Slobodna Zona, od sredine aprila do kraja juna, 
-                                        u preko 50 gradova i mesta u Srbiji potpuno besplatno prikazuju se najbolji filmovi sa 14. izdanja festivala, 
-                                        a 15. i 17. maja u Nišu i Subotici, nakon projekcija filma Srbenka biće organizovan govorni program Kompas 
-                                        Slobodne zone. <br>
-                                        Tema govornog Kompas programa pod nazivom Identiteti koji bude nemir inspirisana je višestruko nagrađivanim
-                                        dokumentarnim filmom Srbenka reditelja Nebojše Slijepčevića, koji se osvrće na događaj kada je 1991. u centru
-                                         Zagreba ubijena dvanaestogodišnja devojčica srpske nacionalnosti. <br> Generaciju kasnije kontroverzni reditelj 
-                                         Oliver Frljić postavlja pozorišnu predstavu o slučaju Aleksandre Zec u riječkom HNK. Naslovnu ulogu, igrom 
-                                         slučaja ili ne, u predstavi dobija Nina – dvanaestogodišnja glumica iz Rijeke srpskog porekla, koja ujedno 
-                                         postaje i glavna protagonistkinja Slijepčevićevog dokumentarca. <br>
-                                        O tome šta je identitet i gde su granice naših identiteta, u kojoj meri je identitet naš izbor, ono na čemu
-                                         radimo, što menjamo i prilagođavamo, ono u čemu uživamo i nosimo neprimento i čvrsto, a u kojoj meri je 
-                                         identitet ono što nam se nameće, poput etničkih identiteta koji nas zatvaraju u bodljikave žice neslobode
-                                          ili rodnih identiteta koji nam propisuju sudbinu nezavsno od naše volje, na razgovoru nakon filma u Niškom 
-                                          kulturnom centru, u sredu 15. maja od 18h časova govoriće filozofkinje Milica Rašić i Sara Ilić i filozof
-                                           Bojan Blagojević.
-                                <img src="img/clanak4b.jpg" alt="" class="img img-thumbnail w-100">   
-                                U petak 17. maja na ista pitanja u Bioskopu Eurocinema Subotica od 18.30h 
-                                pokušaće da odgovore teoretičarka kulture Aleksandra Bosnić Đurić, bibliotekar 
-                                dragan Rokvić, pisac Boško Krstić i pisac i prevodilac Oto Tolnaj. <br>
-                                Razgovore u oba grada moderiraće urednik govornog programa Kompas filmskog festivala Slobodna zona Ivan Milenković.   
-                                Kompas se u okviru 13. Turneje filmskog festivala Slobodna zona organizuje uz podršku Grupe 484, a u partnerstvu
-                                sa Odborom za ljudska prava Niš i Otvorenim univerzitetom Subotica.   <br>
-                                Pored filma Srbenka, na repertoaru Turneje nalaze se i filmovi Bergman – godina života, Leto, Kapetan, 
-                                Tri Lica, Najbolji ortaci i Tranzit.                
-                                Program Turneje i raspored projekcija po gradovima dostupan je na sajtu freezonebelgrade.org.
-                                </div>
-                    </div>
-                    <div class="row ml-1" tabindex="-1" id="red5">
-                                <div class="col-6 mt-2 p-1 pr-0 bg-light border border-light rounded-left">
-                                    <img src="img/it.jpg" style="height:220px !important"  class="img img-thumbnail w-100" alt="">
-                                </div>
-                                <div class="col-lg-6 col-5 mt-2 p-1 bg-light text-dark border pl-0 border-light rounded-right">
-                                    <h5 class="d-inline-block align-bottom  pb-1">
-                                            Trejler za horor film "To: poglavlje 2" je objavljen i zastrašujuć: Jezivi klovn je ponovo u gradu                     </h5>
-                                    <button class="btn-danger btn d-block button" data-target="#clanak5" data-toggle="collapse">Prikaži više</button>
-                                </div>    
-                                <div class="col-lg-12 col-11 bg-light px-2 py-3 text-dark collapse border " id="clanak5"> 
-                                        Nakon skoro dve godine horor koji je stvarno uspeo da zaplaši gledaoce dobija svoj nastavak. 
-                                        Trejler za nastavak horor filma "To: poglavlje 2" (It: Chapter Two) objavljen je u petak popodne,
-                                         a samo je ta najava bila dovoljna da se gledaoci naježe. <br>
-                                        U najavi vidimo sada odraslu Beverli, koju igra Džesika Čestejn (Molina igra, Interstelar), 
-                                        kako se vraća kući u kojoj je odrasla, samo da bi saznala da tu živi jedna od onih čudnih bakica
-                                         od koje sve prolaze žmarci.Običan razgovor veoma brzo postane napet i nelagodan. <br> Drama eskalira 
-                                         kada jeziva bakica ode po kolače (jer jezive bake uvek imaju kolače u rerni), a Beverli primeti 
-                                         poznato lice iz cirkusa kako je gleda sa požutele slike. <br>
-                                        "I bakica je niko drugi nego" - Penivajz.                 <br>      
-                                        Nakon te scene, slede isečci iz filma u kojima vidimo kako članovi "Kluba gubitnika" izgledaju 
-                                        nakon 27 godina od radnje prvog dela "To". Odraslog Bilija glumi Džejms Mekavoj 
-                                        (Podeljen, X-men:Apokalipsa), Majka - Isaija Mustafa (Klinika), a Ričija - Bil Heder
-                                         (Subotom veče uživo).
-                                </div>
-                    </div>
-                    <div class="row ml-1" tabindex="-1" id="red6">
-                                <div class="col-6 mt-2 p-1 pr-0 bg-light border border-light rounded-left">
-                                    <img src="img/avatar.jpg" style="height:220px !important"  class="img img-thumbnail w-100" alt="">
-                                </div>
-                                <div class="col-lg-6 col-5 mt-2 p-1 bg-light text-dark border pl-0 border-light rounded-right">
-                                    <h5 class="d-inline-block align-bottom  pb-1">
-                                            Odlaže se dolazak novog "Avatara", fanovi razočarani: Ukupno 8 godina čekaćemo na izlazak svih delova</h5>
-                                    <button class="btn-danger btn d-block button" data-target="#clanak6" data-toggle="collapse">Prikaži više</button>
-                                </div>    
-                                <div class="col-lg-12 col-11 bg-light px-2 py-3 text-dark collapse border " id="clanak6"> 
-                                        Kameronov "Avatar" i danas drži rekord za prihode od prodatih karata.Kompanija "Volt Dizni" objavila je danas da
-                                         planira u narednih osam godina da snimi nastavak "Avatara", novi serijal "Ratova zvezda" i adaptaciju Steven Spilberga "Priča sa zapadne strane".
-                                        "Avatar 2" Džejmsa Kamerona naći će se u bioskopima 17. decembra 2021. godine.    <br>
-                                        Dizni navodi da će se treći deo pojaviti u bioskopima 2023, četvrti 2025. i peti 2027. godine, 
-                                        preneo je AP. <br>                  
-                                        Kameronov "Avatar" i danas drži rekord za prihode od prodatih karata (2,79 milijardi dolara), 
-                                        mada preti da ga nadmaši film "Avengers: Endgame".
-                                        Kompanija je najavila i da će se tri nastavka "Ratova zvezda" pojaviti u bioskopima 2022, 2024. 
-                                        i 2026. godine. <br>
-                "Priča sa zapadne strane" Stivena Spilberga naći će se u bisokopima 18. decembra 2020, a "Kruela" 23. decembra iste godine. 
-                Dizni je za leto pripremio niz blokbastera uključujući "Aladina", "Priču o igračkama 4" i "Kralja lavova". <br>
-                Ove najave znače da će Dizni vladati bioskopskim salama narednih devet sezona za Božić ili sa filmom iz sage "Avatar" 
-                ili "Ratova zvezda" izuzev jedne godine 2020. Za decembar 2020. kompanija je planirala izlazak filma "Priča sa zapadne
-                 strane" (West Side Story) Stivena Spilberga.
-                                </div>
-                    </div>
-                    <div class="row ml-1" tabindex="-1" id="red7">
-                            <div class="col-6 mt-2 p-1 pr-0 bg-light border border-light rounded-left">
-                                <img src="img/clanak7.jpg" style="height:220px !important"  class="img img-thumbnail w-100" alt="">
-                            </div>
-                            <div class="col-lg-6 col-5 mt-2 p-1 bg-light text-dark border pl-0 border-light rounded-right">
-                                <h5 class="d-inline-block align-bottom  pb-1">
-                                    Ceo dan u bioskopu, samo za jedan film: 496 minuta trajaće projekcija "Mrtvih duša" u Kinoteci</h5>
-                                <button class="btn-danger btn d-block button" data-target="#clanak7" data-toggle="collapse">Prikaži više</button>
-                            </div>    
+                    <div class="col-lg-8 col-md-6 mt-2 p-1 ml-0 text-dark pl-0 rounded-right">
+                        <h5 class="d-inline-block align-bottom  pb-1">Preminuo tvorac "Spajdermena": Želeo da mu na nadrgobnoj ploči piše "konačno zaplet"</h5 >
+                            Sardžent je umro u svojoj 92. godini života u svojoj kući u Sijetlu. Radio je i na filmu "Zvezda je rođena"
+                            Preminuo je Alvin Sardžent, scenarista i dobitnik Oskara.
+    
+                            Sardžent je umro...
+                            <button class="btn-danger btn d-block prikaziVise" data-bs-target="#clanak2" data-bs-toggle="collapse">Prikaži više</button>
+                    </div>    
+                    <div class="col-lg-12 col-11 bg-light px-2 py-3 text-dark collapse border border-light" id="clanak2"> 
+                            ... u svojoj 92. godini života u svojoj kući u Sijetlu, a vest o njegovoj smrti saopštio je producent i prijatelj Pam Vilijams. <br>
                             
-                            <div class="col-lg-12 col-11 bg-light px-2 py-3 text-dark collapse border " id="clanak7"> 
-                                U provinciji Gansu na severozapadu Kine leže ostaci brojnih zatvorenika, 
-                                koji su proglašeni za ultradesničare u kampanji komunista i umirali od gladi u logorima.
-                                Dokumentarac "Mrtve duše", najduži film u dosadašnjoj istoriji Međunarodnog festivala dokumentarnog filma Beldoks u Beogradu, biće prikazan u nedelju, 12. maja, u 12 sati u Jugoslovenskoj kinoteci, 
-                                najavili su organizatori. <br>
-                Delo nastalo u francusko-švajcarsko-kineskoj koprodukciji režirao je Vang Bing, a traje 496 minuta (osam sati i 16 minuta).
-                U provinciji Gansu na severozapadu Kine leže ostaci brojnih zatvorenika napuštenih u pustinji Gobi pre 60 godina. <br>
-                Proglašeni za ultradesničare u kampanji Komunističke partije 1957. godine protiv desnice, oni su umrli od gladi u logorima Jiabiangou
-                 i Mingšui. Film poziva gledaoce da se sretnu s preživelima iz logora kako bi iz prve ruke saznali ko su ti ljudi, kakve teške 
-                 trenutke su bili primorani da izdrže i kakva je bila njihova sudbina. <br> Film se prikazuje u programu "Meteori", selekciji hibridnih,
-                  igrano-dokumentarnih i arthaus filmova, koji je pokrenut prošle godine u Muzeju savremene umetnosti (MSU) u Beogradu kao jedna od novih 
-                  selekcija festivala. Ideja je da se publici približe drugačija shvatanja o filmu, kroz raznolike načine produkcije i 
-                  nastanka audio-vizuelnih dela. <br>
-                Program je nastao po uzoru na saradnje između muzeja i festivala kao sto su: Forum i Forum Expanded na Berlinalu, FID Marsej - MSU u Marseju, Film Society Of Lincoln Center u MoMi u Njujorku i Cinema du reel u Centre Pompidou u Parizu.
-                            </div>
+                            Tokom devedestih, Sardžent je napisao scenario za drugi i treći nastavak filma Spajdermen u kome je glumio Tobi Magvajer. 2012. prilagodio je scenario koji je zasnovan na Marvelovom stripu o superheroju Spajdermenu. Naslovnu ulogu je tumačio Endru Garfild. Dobijao je mnoga priznanja, a kolege su govorile da je on i njegov rad od "majstorske klase - savšršenih tonova, besprekorno struktuirani, duhoviti, ljudski , vredni ponovnog gledanja". <br>
+    
+                            Sardžent je radio i na filmu "Zvezda je rođena" i mnogih drugim.
+                            
+                            Oprobao se i u glumi i imao malu ulogu u ratnom filmu iz 1953.
+                            
+                            Imao je dve kćeri, ženio se dva puta. <br>
+                            
+                            Među citatima koji se pripisuju Sardžentu je o onaj: -Kad umrem, neka na nadgrobnoj ploči piše "konačno zaplet" .
                     </div>
                 </div>
-                <div class="col-lg-4 col-12 ml-0 mt-5 pt-0 px-5">
-                        <div class="card bg-dark pt-0 p-2 m-0 mb-2">
-                          <div class="card-body pt-0 p-2 m-0 text-center">
-                            <h5 class="card-title text-light  bg-danger rounded  mb-1 justify-content-center d-flex">TEMPERATURA:</h5>
-                            <p class="card-text border-bottom bg-light rounded m-0 ">Danas: 20˚C</p>
-                            <p class="card-text border-bottom bg-light rounded m-0">Sutra: 16˚C</p>
-                            <p class="card-text border-bottom bg-light rounded m-0">Četvrtak: 11˚C</p>
-                            <p class="card-text border-bottom bg-light rounded m-0">Petak: 16˚C</p>
-                            <p class="card-text border-bottom bg-light rounded m-0">Subota: 18˚C</p>
-                            <p class="card-text border-bottom bg-light rounded m-0">Nedelja: 15˚C</p>
-                            <p class="card-text border-bottom bg-light rounded m-0">Ponedeljak: 9˚C</p>                   
-                            <a href="vremenska.html" class="btn btn-danger form-control mt-1">Vidi prognozu &#8649</a>
-                          </div>
-                        </div>
-                        <div class="card bg-dark p-2">
-                                <div class="card-header bg-light p-1 text-center">Udarna vest <span class="badge badge-warning">NOVO</span> </div>
-                                <h5 class="card-title text-center m-0"></h5>
-                                <img class="card-img-top bg-light" src="img/vreme.jpg" alt="">
-                                <div class="card-body bg-light">
-                                    <h5 class="card-title mb-1 text-center ">Preminula legendarna glumica Doris Dej </h5>
-                                    <button type="button" class="form-control btn btn-danger rounded m-0" data-toggle="modal" data-target="#modalCard1">Saznaj više</button>
-                                        <div class="modal fade" id="modalCard1" >
-                                            <div class="modal-dialog  modal-lg">
-                                                <div class="modal-content ">
-                                                    <div class="modal-header">
-                                                        <h4 class="modal-title">Preminula glumica Doris Dej</h4>
-                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                            Doris Dej, čuvena holivudska zvezda, preminula je u 97-godini, preneo je AP. <br>
-                                                            Glumica je umrla u svom domu u Karmel Voliju u Kaliforniji od komplikacija nastalih zbog upale pluća, okružena najbližim prijateljima, prenosi AP. <br>               
-                                                            Kako je Fondacija saopštila, Doris Dej je bila odličnog psihofizičkog stanja za svoje godine, dok nije nedavno dobila veoma ozbiljnu upalu pluća. <br>
-                                                            Pevačica i glumica igrala je u skoro 40 filmova i važila za jednu od najvećih zvezda 60-ih godina. 
-                                                            <img src="img/doris.jpg" class="img-fluid w-100" alt=""> <br>
-                                                            Muzičku karijeru je započela 1939. kao članica velikog benda, a njena popularnost je počela da raste sa prvim hit singlom "Sentimental Journey" iz 1945. godine.
-                                                             Nakon što je napustila bend Lesa Brauna, Dej je započela solo karijeru. <br>
-                                                            U periodu između 1947. i 1967, koliko je trajao ugovor, snimila je preko 650 pesama za ovu diskografsku kuću i time 
-                                                            postala jedna od najpopularnijih pevačica 20. veka. <br>
-                                                            Godine 1948. dobila je prvu filmsku ulogu u muzičkoj komediji "Romansa na otvorenom moru".  <br>
-                                                            Nastupila je u ukupno 39 filmova tokom svoje karijere. Bila je nominovana za nagradu Oskar za ulogu u filmu "Šaputanje na jastuku" iz 1959. i dobitnica je Nagrade Sesil B. Demil za životno delo. 
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                </div>
-                                <div class="card-footer bg-light pl-2 text-muted p-0">
-                                   <small> Juče</small>
-                                </div>
-                        </div>
-                        <div class="card bg-dark p-2 mt-2">
-                                <div class="card-header bg-light p-1 text-center">Sport <span class="badge badge-primary">NOVO</span> </div>
-                                <h5 class="card-title text-center m-0"></h5>
-                                <img class="card-img-top bg-light" src="img/novak.jpg" alt="">
-                                <div class="card-body bg-light">
-                                    <h5 class="card-title text-dark text-center"> KONKURENCIJO, SANJAJ O OVOME! <br></h5>
-                                    <p class="card-text mb-0 text-center ">
-                                        Đoković pobegao rivalima, Nadal i Federer mogu da ga prestignu SAMO ZAJEDNO!</p>
-                                    <button type="button" class="form-control btn btn-danger rounded m-0" data-toggle="modal" data-target="#modalCard2">Saznaj više</button>
-                                        <div class="modal fade" id="modalCard2" >
-                                            <div class="modal-dialog  modal-lg">
-                                                <div class="modal-content ">
-                                                    <div class="modal-header">
-                                                        <h4 class="modal-title">KONKURENCIJO, SANJAJ O OVOME! </h4>
-                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                            Novak Đoković je na furiozan način došao do titule na mastersu u Madridu. <br> Naš as nije izgubio nijedan set. 
-                                                            Osvajanje 33. trofeja na turnirima iz 1000 serije omogućilo mu je da dodatno poveća bodovnu prednost na ATP lisi u 
-                                                            odnosu na drugoplasiranog Rafaela Nadala. <br>
-                                                            Najbolji teniser sveta sada ima 12.115 bodova, a Španac 7.945. To znači da njih dvojicu sada deli čak 4.170 ATP bodova, 
-                                                            a prošle nedelje bili su udaljeni 3.395. Nadal jeste uvećao svoj bilans za 180 bodova, ali mu je Đoković mnogo odmakao jer 
-                                                            je kao šampion osvojio hiljadu, a kako je "branio" samo 45, uvećao je svoj saldo za 955.    <br>                                                       
-                                                            Trećeplasirani Rodžer Federer (5.770) samo zajedno sa Nadalom može da pretekne Đokovića - Švajcarac i Španac ukupno imaju 13.715 bodova,
-                                                            a Nole pomenutih 12.115.
-                                                            <img src="img/novak.jpg" class="img-fluid w-100" alt=""> 
-                                                            Velikih promena u vrhu nije bilo, osim što je na sedmo mesto došao finalista Madrida Stefanos Cicipas i to mu je ujedno najbolji
-                                                            plasman u karijeri. <br>
-                                                            Što se ostalih naših tenisera tiče, u Top 100 su još četvorica. Dušan Lajović je nazadaovao sedam mesta,
-                                                             pa je sada 31. na ATP listi sa 1.316 poena, Laslo Đere je zadržao isti plasman (32.),
-                                                            dok je Filip Krajinović napredovao pet pozicija, i nalazi se na 69. mestu. <br>
-                                                             U elitnom društvu je i Miomir Kecmanović koji je 84. na svetu.
-                                                           
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                </div>
-                                <div class="card-footer bg-light pl-2 text-muted p-0">
-                                   <small>Juče</small>
-                                </div>
-                        </div>
+                <div class="row bg-light border border-light rounded mt-1 ms-1" tabindex="-1" id="red3">
+                    <div class="col-lg-3 col-md-6 mt-2 p-1 pr-0 mr-0 rounded-left">
+                        <img src="img/ivo.jpg"  style="height:220px !important" class="img img-thumbnail w-100" alt="">
+                    </div>
+                    <div class="col-lg-8 col-md-6 mt-2 p-1 ml-0 text-dark pl-0 rounded-right">
+                        <h5 class="d-inline-block align-bottom  pb-1">
+                                Kako je Ivo Andrić govorio o ženskom brbljanju: To su razgovori puni zmijskog siktanja, uspijanja, a žene su kratke pameti i suva srca.
+                        </h5>
+                        Nobelovac Ivo Andrić objavio je 1976. godine knjigu "Znakovi pored puta", u kojoj je jedan deo posvetio opisu ženskih razgovora. On zvuk tog čavrljanja poredi i sa palacanjem zmijskih jezika.
+                                "Slušam kako četiri žene srednjih godina “razgovaraju“, ne slušajući jedna drugu...
+                        <button class="btn-danger btn d-block prikaziVise" data-bs-target="#clanak3" data-bs-toggle="collapse">Prikaži više</button>
+                    </div>    
+                    <div class="col-lg-12 col-11 bg-light px-2 py-3 text-dark collapse border border-light" id="clanak3"> 
+                        ... ne misleći ni na šta na svetu do na prvu iduću reč koju treba da izgovore, a tim rečima nema kraja ni računa. U stvari, one više pevaju nego što govore, i to sve četiri u jedan glas, kao derviši opijeni sopstvenim dahtanjem i halakanjem. <br>
+    
+    Taj razgovor se kreće na niskom planu malih ogovaranja, suludih nerazumevanja, prozirnih aluzija, i pun je zmijskog siktanja, zagrcavanja, podmitivanja i uspijanja. Četiri stara i bolesna, sobnim vazduhom otrovana papagaja. <br>
+    
+                Možda u silnoj potrebi ovakvih žena za brbljanjem ima - pored kratke pameti i suva srca - nekih ostataka neiživljene erotike. Možda je to (teško njima!) davno ugušen kliktaj devojaštva, ljubavna pesma koju nikad nisu mogle, smele ni umele da zapevaju, i koja sada navire iz njih, ali kao jadna karikatura onoga što je nekad htela da bude, u vidu besmislenog, čudovišnog brbljanja."
+                    </div>
                 </div>
-                <div class="clearfix"></div>
+                <div class="row bg-light border border-light rounded mt-1 ms-1" tabindex="-1" id="red4">
+                    <div class="col-lg-3 col-md-6 mt-2 p-1 pr-0 mr-0 rounded-left">
+                        <img src="img/clanak4a.jpg" style="height:220px !important"  class="img img-thumbnail w-100" alt="">
+                    </div>
+                    <div class="col-lg-8 col-md-6 mt-2 p-1 ml-0 text-dark pl-0 rounded-right">
+                        <h5 class="d-inline-block align-bottom  pb-1">
+                                Šta je identitet i gde su granice naših identiteta, u kojoj meri je identitet naš izbor, ono na čemu radimo, što menjamo i prilagođavamo, ono u čemu uživamo i nosimo neprimento i čvrsto, a u kojoj meri je identitet ono što nam se nameće?
+                        </h5>
+                        Šta je identitet i gde su granice naših identiteta, u kojoj meri je identitet naš izbor, ono na čemu radimo, 
+                            što menjamo i prilagođavamo, ono u čemu uživamo i nosimo neprimetno i čvrsto? <br>
+                            Tokom ovogodišnje Turneje filmskog festivala Slobodna Zona...
+                        <button class="btn-danger btn d-block prikaziVise" data-bs-target="#clanak4" data-bs-toggle="collapse">Prikaži više</button>
+                    </div>    
+                    <div class="col-lg-12 col-11 bg-light px-2 py-3 text-dark collapse border border-light" id="clanak4"> 
+                            ... od sredine aprila do kraja juna, 
+                            u preko 50 gradova i mesta u Srbiji potpuno besplatno prikazuju se najbolji filmovi sa 14. izdanja festivala, 
+                            a 15. i 17. maja u Nišu i Subotici, nakon projekcija filma Srbenka biće organizovan govorni program Kompas 
+                            Slobodne zone. <br>
+                            Tema govornog Kompas programa pod nazivom Identiteti koji bude nemir inspirisana je višestruko nagrađivanim
+                            dokumentarnim filmom Srbenka reditelja Nebojše Slijepčevića, koji se osvrće na događaj kada je 1991. u centru
+                                Zagreba ubijena dvanaestogodišnja devojčica srpske nacionalnosti. <br> Generaciju kasnije kontroverzni reditelj 
+                                Oliver Frljić postavlja pozorišnu predstavu o slučaju Aleksandre Zec u riječkom HNK. Naslovnu ulogu, igrom 
+                                slučaja ili ne, u predstavi dobija Nina – dvanaestogodišnja glumica iz Rijeke srpskog porekla, koja ujedno 
+                                postaje i glavna protagonistkinja Slijepčevićevog dokumentarca. <br>
+                            O tome šta je identitet i gde su granice naših identiteta, u kojoj meri je identitet naš izbor, ono na čemu
+                                radimo, što menjamo i prilagođavamo, ono u čemu uživamo i nosimo neprimento i čvrsto, a u kojoj meri je 
+                                identitet ono što nam se nameće, poput etničkih identiteta koji nas zatvaraju u bodljikave žice neslobode
+                                ili rodnih identiteta koji nam propisuju sudbinu nezavsno od naše volje, na razgovoru nakon filma u Niškom 
+                                kulturnom centru, u sredu 15. maja od 18h časova govoriće filozofkinje Milica Rašić i Sara Ilić i filozof
+                                Bojan Blagojević.
+                    <img src="img/clanak4b.jpg" alt="" class="img img-thumbnail w-100">   
+                    U petak 17. maja na ista pitanja u Bioskopu Eurocinema Subotica od 18.30h 
+                    pokušaće da odgovore teoretičarka kulture Aleksandra Bosnić Đurić, bibliotekar 
+                    dragan Rokvić, pisac Boško Krstić i pisac i prevodilac Oto Tolnaj. <br>
+                    Razgovore u oba grada moderiraće urednik govornog programa Kompas filmskog festivala Slobodna zona Ivan Milenković.   
+                    Kompas se u okviru 13. Turneje filmskog festivala Slobodna zona organizuje uz podršku Grupe 484, a u partnerstvu
+                    sa Odborom za ljudska prava Niš i Otvorenim univerzitetom Subotica.   <br>
+                    Pored filma Srbenka, na repertoaru Turneje nalaze se i filmovi Bergman – godina života, Leto, Kapetan, 
+                    Tri Lica, Najbolji ortaci i Tranzit.                
+                    Program Turneje i raspored projekcija po gradovima dostupan je na sajtu freezonebelgrade.org.
+                    </div>
+                </div>
+                <div class="row card-group ms-1 mt-1">
+                    <div class="card col-lg-3 col-md-6 col-sm-12 bg-light border rounded">
+                        <div class="card-header text-center">Sport <span class="badge badge-pill badge-danger">NOVO</span> </div>
+                        <h5 class="card-title text-center">SPREMA SE TRANSFER BOMBA U SUPERLIGI SRBIJE: (VIDEO)</h5>
+                        <img class="card-img-top h-50" src="img/card5.jpg" alt="">
+                        <div class="card-body d-flex flex-column">         
+                            <p class="card-text mb-0 text-center ">Fudbaler Čukaričkog na meti Borusije Dortmund! Partizan će morati da stane u red! (VIDEO).</p>
+                            <button type="button" class="form-control bg-info text-light fw-bold p-2 rounded m-0 mt-auto" data-bs-toggle="modal" data-bs-target="#modalCard1">Saznaj više</button>
+                            <div class="modal fade" id="modalCard1">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">SPREMA SE TRANSFER BOMBA U SUPERLIGI SRBIJE:</h4>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Svi smo navikli na priču kako evropski velikane žele fudbalere večitih rivala Zvezde i Partizana, ali ovog puta priča je drugačija. <br>
+                                            Možda je tačna tvrdnja da su igrači Zvezde i Partizana najcenjeni u Superligi Srbije, ali i po ostalim superligašima može da se nađe par kvalitetnih igrača koji još uvek nisu potpisali za ova dva fudbalska giganta.   <br>    
+                                            Prema navodima portala Gana Soker Net, fudbaler Čukaričkog Samuel Ovusu se nalazi na meti Borusije iz Dortmunda! <br>
+                                            Krilni napadač ima odličnu sezonu iza sebe, postigao je sedam golova i upisao deset asistencija, najviše u Superligi Srbije. <br>
+                                            Par dana unazad spekulisalo se da je Ovusu na pragu potpisa sa Partizanom, ali očigledno da će crno-beli morati da stanu u red ukoliko žele ovog fudbalera. <br>
+                                            <iframe src="https://www.youtube.com/embed/4ExO2o5y-KM" class="w-100" height="315px" frameborder="0"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer pl-1 text-muted p-0">
+                        <small> Pre 18 sati</small>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-6 col-sm-12 bg-light border rounded">
+                        <div class="card-header text-center">Vesti <span class="badge badge-pill badge-info">NOVO</span> </div>
+                        <h5 class="card-title text-center">Pogledajte novi insert iz filma "X-Men: Mračni Feniks" (VIDEO)</h5>
+                        <img class="card-img-top h-50" src="img/card2.jpg" alt="">
+                        <div class="card-body d-flex flex-column">
+                            <button type="button" class="form-control bg-info text-light fw-bold p-2 rounded m-0  mt-auto" data-bs-toggle="modal" data-bs-target="#modalCard2">Pogledaj</button>
+                            <div class="modal fade" id="modalCard2">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Pogledajte novi insert iz filma "X-Men: Mračni Feniks"</h4>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                                <iframe width="420" height="315"
+                                                src="https://www.youtube.com/embed/UXdDkyA1B_0" class="w-100">
+                                                </iframe>                                                       
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer pl-1 p-0 text-muted">
+                        <small>  Pre 4 sata</small> 
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-6 col-sm-12 bg-light border rounded">
+                        <div class="card-header text-center">Kultura <span class="badge badge-pill badge-success">NOVO</span> </div>
+                        <h5 class="card-title text-center">Vodimo vas u bioskop</h5>
+                        <img class="card-img-top h-50" src="img/card1.jpg" alt="">
+                        <div class="card-body d-flex flex-column">
+                            <p class="card-text mb-0 text-center ">Teroristički napad na ostrvu Uteja u blizini prestonice Oslo 2011. godine ostao je u sećanjima širom sveta, a po prvi put u Norveškoj snimljen je igrani film o ovom nemilom događaju.</p>
+                            <button type="button" class="form-control bg-info text-light fw-bold p-2 rounded m-0 mt-auto" data-bs-toggle="modal" data-bs-target="#modalCard3">Saznaj više</button>
+                            <div class="modal fade" id="modalCard3">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Vodimo vas u bioskop</h4>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                                Teroristički napad na ostrvu Uteja u blizini prestonice Oslo 2011. godine ostao je u sećanjima širom sveta, a po prvi put u Norveškoj snimljen
+                                                je igrani film o ovom nemilom događaju. Ostvarenje vodećeg savremenog reditelja Erika Popea „Uteja - 22. jul“ naći će se na bioskopskom 
+                                                platnu od 9 maja. <br>
+                                                Priča prati osamnaestogodišnju devojku Kaju i njene prijatelje koji su meta terorističkog napada i koji mahnito i u strahu za sopstveni
+                                                život, pokušavaju da pobegnu na sigurno i spasu se.  <br>                                             
+                                                Film je zasnovan na istinitim iskazima preživelih. Ručna kamera i snimljanje u pokretu daju osećaj prave reportaže, ipak nije reč o 
+                                                dokumentarcu već o igranom filmu tokom kojeg je publika jednako zbunjena onim šta se dešava kao i glavni lik.           <br>                                     
+                                                Film "Uteja - 22. jul" je zasnovan na temeljnim istraživanjima i intervjuima koje je reditelj i scenarista Erik Pope uradio sa 20 mladih
+                                                ljudi koji su preživeli taj dan na ostrvu s namerom da prikaže strašan događaj iz perspektive žrtava. Više od dve godine reditelj je 
+                                                pokušavao da pronađe način kako da ispriča ovaj tragičan događaj.                                           <br>     
+                                                „Želeo sam da ispričam priču sa stanovišta mladih koji su preživeli. Neki ljudi kažu da je još uvek rano za tu vrstu prikaza,
+                                                a drugi se pitaju: A, kada je pravo vreme?“ rekao je reditelj.                                               
+                                                Dva teroristička napada u Norveškoj dogodila su se 2011. godine, na omladinskom letnjem kampu na ostrvu Uteja nedaleko od prestonice
+                                                Oslo, kao i u samoj prestonici i taj dan na smrt je stradalo 77 ljudi.                                             <br>
+                                                <img class="img-fluid w-100" src="img/card1.jpg" alt="">
+                                                Mi vas vodimo na projekciju filma večeras od 19.20 (Kombank dvorana). Pošaljite nam danas mejl na poklanjamo@ringier.rs do 16 sati.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer pl-1 text-muted p-0">
+                            <small> Pre 1 sat</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="row bg-light border border-light rounded mt-1 ms-1" tabindex="-1" id="red5">
+                    <div class="col-lg-3 col-md-6 mt-2 p-1 pr-0 mr-0 rounded-left">
+                        <img src="img/it.jpg" style="height:220px !important"  class="img img-thumbnail w-100" alt="">
+                    </div>
+                    <div class="col-lg-8 col-md-6 mt-2 p-1 ml-0 text-dark pl-0 rounded-right">
+                        <h5 class="d-inline-block align-bottom  pb-1">
+                                Trejler za horor film "To: poglavlje 2" je objavljen i zastrašujuć: Jezivi klovn je ponovo u gradu                     </h5>
+                                Nakon skoro dve godine horor koji je stvarno uspeo da zaplaši gledaoce dobija svoj nastavak. 
+                            Trejler za nastavak horor filma "To: poglavlje 2" (It: Chapter Two) objavljen je u petak popodne,
+                                a samo je ta najava bila dovoljna da se gledaoci naježe.
+                        <button class="btn-danger btn d-block prikaziVise" data-bs-target="#clanak5" data-bs-toggle="collapse">Prikaži više</button>
+                    </div>    
+                    <div class="col-lg-12 col-11 bg-light px-2 py-3 text-dark collapse border border-light" id="clanak5"> 
+                            
+                            U najavi vidimo sada odraslu Beverli, koju igra Džesika Čestejn (Molina igra, Interstelar), 
+                            kako se vraća kući u kojoj je odrasla, samo da bi saznala da tu živi jedna od onih čudnih bakica
+                                od koje sve prolaze žmarci.Običan razgovor veoma brzo postane napet i nelagodan. <br> Drama eskalira 
+                                kada jeziva bakica ode po kolače (jer jezive bake uvek imaju kolače u rerni), a Beverli primeti 
+                                poznato lice iz cirkusa kako je gleda sa požutele slike. <br>
+                            "I bakica je niko drugi nego" - Penivajz.                 <br>      
+                            Nakon te scene, slede isečci iz filma u kojima vidimo kako članovi "Kluba gubitnika" izgledaju 
+                            nakon 27 godina od radnje prvog dela "To". Odraslog Bilija glumi Džejms Mekavoj 
+                            (Podeljen, X-men:Apokalipsa), Majka - Isaija Mustafa (Klinika), a Ričija - Bil Heder
+                                (Subotom veče uživo).
+                    </div>
+                </div>
+                <div class="row bg-light border border-light rounded mt-1 ms-1" tabindex="-1" id="red6">
+                    <div class="col-lg-3 col-md-6 mt-2 p-1 pr-0 mr-0 rounded-left">
+                        <img src="img/avatar.jpg" style="height:220px !important"  class="img img-thumbnail w-100" alt="">
+                    </div>
+                    <div class="col-lg-8 col-md-6 mt-2 p-1 ml-0 text-dark pl-0 rounded-right">
+                        <h5 class="d-inline-block align-bottom  pb-1">
+                                Odlaže se dolazak novog "Avatara", fanovi razočarani: Ukupno 8 godina čekaćemo na izlazak svih delova</h5>
+                                Kameronov "Avatar" i danas drži rekord za prihode od prodatih karata.Kompanija "Volt Dizni" objavila je danas da
+                                planira u narednih osam godina da snimi nastavak "Avatara", novi serijal "Ratova zvezda" i adaptaciju Steven Spilberga "Priča sa zapadne strane".
+                            "Avatar 2" Džejmsa Kamerona naći će se u bioskopima od...
+                        <button class="btn-danger btn d-block prikaziVise" data-bs-target="#clanak6" data-bs-toggle="collapse">Prikaži više</button>
+                    </div>    
+                    <div class="col-lg-12 col-11 bg-light px-2 py-3 text-dark collapse border border-light" id="clanak6"> 
+                            ... 17. decembra 2021. godine.    <br>
+                            Dizni navodi da će se treći deo pojaviti u bioskopima 2023, četvrti 2025. i peti 2027. godine, 
+                            preneo je AP. <br>                  
+                            Kameronov "Avatar" i danas drži rekord za prihode od prodatih karata (2,79 milijardi dolara), 
+                            mada preti da ga nadmaši film "Avengers: Endgame".
+                            Kompanija je najavila i da će se tri nastavka "Ratova zvezda" pojaviti u bioskopima 2022, 2024. 
+                            i 2026. godine. <br>
+    "Priča sa zapadne strane" Stivena Spilberga naći će se u bisokopima 18. decembra 2020, a "Kruela" 23. decembra iste godine. 
+    Dizni je za leto pripremio niz blokbastera uključujući "Aladina", "Priču o igračkama 4" i "Kralja lavova". <br>
+    Ove najave znače da će Dizni vladati bioskopskim salama narednih devet sezona za Božić ili sa filmom iz sage "Avatar" 
+    ili "Ratova zvezda" izuzev jedne godine 2020. Za decembar 2020. kompanija je planirala izlazak filma "Priča sa zapadne
+        strane" (West Side Story) Stivena Spilberga.
+                    </div>
+                </div>
+                <div class="row bg-light border border-light rounded mt-1 ms-1" tabindex="-1" id="red7">
+                    <div class="col-lg-3 col-md-6 mt-2 p-1 pr-0 mr-0 rounded-left">
+                        <img src="img/clanak7.jpg" style="height:220px !important"  class="img img-thumbnail w-100" alt="">
+                    </div>
+                    <div class="col-lg-8 col-md-6 mt-2 p-1 ml-0 text-dark pl-0 rounded-right">
+                        <h5 class="d-inline-block align-bottom  pb-1">
+                            Ceo dan u bioskopu, samo za jedan film: 496 minuta trajaće projekcija "Mrtvih duša" u Kinoteci</h5>
+                            U provinciji Gansu na severozapadu Kine leže ostaci brojnih zatvorenika, 
+                        koji su proglašeni za ultradesničare u kampanji komunista i umirali od gladi u logorima.
+                        <button class="btn-danger btn d-block prikaziVise" data-bs-target="#clanak7" data-bs-toggle="collapse">Prikaži više</button>
+                    </div>                         
+                    <div class="col-lg-12 col-11 bg-light px-2 py-3 text-dark collapse border border-light" id="clanak7"> 
+                        Dokumentarac "Mrtve duše", najduži film u dosadašnjoj istoriji Međunarodnog festivala dokumentarnog filma Beldoks u Beogradu, biće prikazan u nedelju, 12. maja, u 12 sati u Jugoslovenskoj kinoteci, 
+                        najavili su organizatori. <br>
+        Delo nastalo u francusko-švajcarsko-kineskoj koprodukciji režirao je Vang Bing, a traje 496 minuta (osam sati i 16 minuta).
+        U provinciji Gansu na severozapadu Kine leže ostaci brojnih zatvorenika napuštenih u pustinji Gobi pre 60 godina. <br>
+        Proglašeni za ultradesničare u kampanji Komunističke partije 1957. godine protiv desnice, oni su umrli od gladi u logorima Jiabiangou
+            i Mingšui. Film poziva gledaoce da se sretnu s preživelima iz logora kako bi iz prve ruke saznali ko su ti ljudi, kakve teške 
+            trenutke su bili primorani da izdrže i kakva je bila njihova sudbina. <br> Film se prikazuje u programu "Meteori", selekciji hibridnih,
+            igrano-dokumentarnih i arthaus filmova, koji je pokrenut prošle godine u Muzeju savremene umetnosti (MSU) u Beogradu kao jedna od novih 
+            selekcija festivala. Ideja je da se publici približe drugačija shvatanja o filmu, kroz raznolike načine produkcije i 
+            nastanka audio-vizuelnih dela. <br>
+        Program je nastao po uzoru na saradnje između muzeja i festivala kao sto su: Forum i Forum Expanded na Berlinalu, FID Marsej - MSU u Marseju, Film Society Of Lincoln Center u MoMi u Njujorku i Cinema du reel u Centre Pompidou u Parizu.
+                    </div>
+                </div>
             </div>
+            <div class="col-lg-4 col-12 ml-0 mt-5 pt-0 px-5">
+                <div class="card bg-primary p-2">
+                    <div class="card-header bg-light p-1 text-center">Udarna vest <span class="badge badge-warning">NOVO</span> </div>
+                    <h5 class="card-title text-center m-0"></h5>
+                    <img class="card-img-top bg-light" src="img/vreme.jpg" alt="">
+                    <div class="card-body bg-light">
+                        <h5 class="card-title mb-1 text-center ">Preminula legendarna glumica Doris Dej </h5>
+                        <button type="button" class="form-control bg-warning fw-bold text-dark p-2 rounded m-0" data-bs-toggle="modal" data-bs-target="#modalCard5">Saznaj više</button>
+                        <div class="modal fade" id="modalCard5">
+                            <div class="modal-dialog  modal-lg">
+                                <div class="modal-content ">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Preminula glumica Doris Dej</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-labelledby="close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Doris Dej, čuvena holivudska zvezda, preminula je u 97-godini, preneo je AP. <br>
+                                        Glumica je umrla u svom domu u Karmel Voliju u Kaliforniji od komplikacija nastalih zbog upale pluća, okružena najbližim prijateljima, prenosi AP. <br>               
+                                        Kako je Fondacija saopštila, Doris Dej je bila odličnog psihofizičkog stanja za svoje godine, dok nije nedavno dobila veoma ozbiljnu upalu pluća. <br>
+                                        Pevačica i glumica igrala je u skoro 40 filmova i važila za jednu od najvećih zvezda 60-ih godina. 
+                                        <img src="img/doris.jpg" class="img-fluid w-100" alt=""> <br>
+                                        Muzičku karijeru je započela 1939. kao članica velikog benda, a njena popularnost je počela da raste sa prvim hit singlom "Sentimental Journey" iz 1945. godine.
+                                            Nakon što je napustila bend Lesa Brauna, Dej je započela solo karijeru. <br>
+                                        U periodu između 1947. i 1967, koliko je trajao ugovor, snimila je preko 650 pesama za ovu diskografsku kuću i time 
+                                        postala jedna od najpopularnijih pevačica 20. veka. <br>
+                                        Godine 1948. dobila je prvu filmsku ulogu u muzičkoj komediji "Romansa na otvorenom moru".  <br>
+                                        Nastupila je u ukupno 39 filmova tokom svoje karijere. Bila je nominovana za nagradu Oskar za ulogu u filmu "Šaputanje na jastuku" iz 1959. i dobitnica je Nagrade Sesil B. Demil za životno delo. 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-light pl-2 text-muted p-0">
+                        <small> Juče</small>
+                    </div>
+                </div>
+                <div class="bg-light border rounded p-2 mt-2">
+                    <a href="" target="_blank"><img src="https://images.livemint.com/rf/Image-621x414/LiveMint/Period2/2018/03/08/Photos/Processed/hm-kiqC--621x414@LiveMint.jpg" alt="" class="w-100 m-0 p-0 ms-auto img-thumbnail"></a>
+                </div>
+                <div class="card bg-primary p-2 mt-2">
+                    <div class="card-header bg-light p-1 text-center">Sport <span class="badge badge-primary">NOVO</span> </div>
+                    <h5 class="card-title text-center m-0"></h5>
+                    <img class="card-img-top bg-light" src="img/novak.jpg" alt="">
+                    <div class="card-body bg-light">
+                        <h5 class="card-title text-dark text-center"> KONKURENCIJO, SANJAJ O OVOME! <br></h5>
+                        <p class="card-text mb-0 text-center ">Đoković pobegao rivalima, Nadal i Federer mogu da ga prestignu SAMO ZAJEDNO!</p>
+                        <button type="button" class="form-control bg-warning fw-bold text-dark p-2 rounded m-0" data-bs-toggle="modal" data-bs-target="#modalCard4">Saznaj više</button>
+                        <div class="modal fade" id="modalCard4">
+                            <div class="modal-dialog  modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">KONKURENCIJO, SANJAJ O OVOME! </h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-labelledby="close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                            Novak Đoković je na furiozan način došao do titule na mastersu u Madridu. <br> Naš as nije izgubio nijedan set. 
+                                            Osvajanje 33. trofeja na turnirima iz 1000 serije omogućilo mu je da dodatno poveća bodovnu prednost na ATP lisi u 
+                                            odnosu na drugoplasiranog Rafaela Nadala. <br>
+                                            Najbolji teniser sveta sada ima 12.115 bodova, a Španac 7.945. To znači da njih dvojicu sada deli čak 4.170 ATP bodova, 
+                                            a prošle nedelje bili su udaljeni 3.395. Nadal jeste uvećao svoj bilans za 180 bodova, ali mu je Đoković mnogo odmakao jer 
+                                            je kao šampion osvojio hiljadu, a kako je "branio" samo 45, uvećao je svoj saldo za 955.    <br>                                                       
+                                            Trećeplasirani Rodžer Federer (5.770) samo zajedno sa Nadalom može da pretekne Đokovića - Švajcarac i Španac ukupno imaju 13.715 bodova,
+                                            a Nole pomenutih 12.115.
+                                            <img src="img/novak.jpg" class="img-fluid w-100" alt=""> 
+                                            Velikih promena u vrhu nije bilo, osim što je na sedmo mesto došao finalista Madrida Stefanos Cicipas i to mu je ujedno najbolji
+                                            plasman u karijeri. <br>
+                                            Što se ostalih naših tenisera tiče, u Top 100 su još četvorica. Dušan Lajović je nazadaovao sedam mesta,
+                                                pa je sada 31. na ATP listi sa 1.316 poena, Laslo Đere je zadržao isti plasman (32.),
+                                            dok je Filip Krajinović napredovao pet pozicija, i nalazi se na 69. mestu. <br>
+                                                U elitnom društvu je i Miomir Kecmanović koji je 84. na svetu.
+                                            
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-light pl-2 text-muted p-0">
+                        <small>Juče</small>
+                    </div>
+                </div>
+                <div class="card bg-info pt-0 p-2 m-0 mb-2 mt-2">
+                    <div class="card-body pt-0 p-2 m-0 text-center bg-light mt-2 rounded">
+                        <h5 class="card-title text-info  bg-light rounded mt-2  mb-1 justify-content-center d-flex">TEMPERATURA:</h5>
+                        <p class="card-text border-bottom bg-light rounded m-0 ">Danas: 20˚C</p>
+                        <p class="card-text border-bottom bg-light rounded m-0">Sutra: 16˚C</p>
+                        <p class="card-text border-bottom bg-light rounded m-0">Četvrtak: 11˚C</p>
+                        <p class="card-text border-bottom bg-light rounded m-0">Petak: 16˚C</p>
+                        <p class="card-text border-bottom bg-light rounded m-0">Subota: 18˚C</p>
+                        <p class="card-text border-bottom bg-light rounded m-0">Nedelja: 15˚C</p>
+                        <p class="card-text border-bottom bg-light rounded m-0">Ponedeljak: 9˚C</p>                   
+                        <a href="vremenska.html" class="bg-danger form-control mt-1 text-light">Vidi prognozu &#8649</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <footer class="bg-dark text-light container-fluid pt-3 pb-1 w-100" >
-            <span class="mr-5"> <h6 class="d-inline-block">&copy Report, Savski Nasip 7, 11070 Novi Beograd
-                <img src="img/favicon.png" alt=""> </h6></span>
-            <span class="d-inline-block">
-                <a href="https://chats.viber.com/telegraf.rs/en" target="_blank">
-                    <button type="button" class="btn btn-light rounded-circle"> <i class="fab fa-viber"></i></button> 
-                </a>
-                <a href="https://twitter.com/telegrafrs" target="_blank">
-                    <button type="button" class="btn btn-light rounded-circle"><i class="fab fa-twitter-square"></i></button> 
-                </a>
-                <a href="https://www.youtube.com/telegrafrstv" target="_blank">
-                    <button type="button" class="btn btn-light rounded-circle"><i class="fab fa-youtube" ></i></button> 
-                </a>
-                <a href="https://www.facebook.com/telegraf.rs/" target="_blank">
-                    <button type="button" class="btn btn-light rounded-circle"><i class="fab fa-facebook-square"></i></button> 
-                </a> 
-                <a href=" redakcija@telegraf.rs" target="_blank">
-                    <button type="button" class="btn btn-light rounded-circle"><i class="fas fa-envelope-square"></i></button> 
-                </a> 
-            </span>
+
+    <footer class="bg-primary text-light container-fluid pt-3 pb-1 w-100 mt-3" >
+        <div class="row align-items-center"> 
+            <a href="index.html" class="col-lg-3 col-sm-12 text-center"><img style="height:5rem" src="img/logo_transparent.png"></a>    
+            <a href="" class="col-sm-4 col-lg-2  text-light text-decoration-none text-center ">O nama</a>
+            <a href="kontakt.html" class="col-sm-4 col-lg-2 text-light text-decoration-none text-center ">Kontakt</a>
+            <a href="" class="col-sm-4 col-lg-2 text-light text-decoration-none text-center ">Pravila i uslovi korišćenja</a>
+        </div>
+        <hr>
+        <div class="text-center">
+            <a href="https://chats.viber.com/telegraf.rs/en" target="_blank" class="mx-1">
+                <button type="button" class="bg-light text-primary p-3 rounded-circle border border-light"> <i class="fab fa-viber"></i></button> 
+            </a>
+            <a href="https://twitter.com/telegrafrs" target="_blank" class="mx-1">
+                <button type="button" class="bg-light text-primary p-3 rounded-circle border border-light"><i class="fab fa-twitter"></i></button> 
+            </a>
+            <a href="https://www.youtube.com/telegrafrstv" target="_blank" class="mx-1">
+                <button type="button" class="bg-light text-primary p-3 rounded-circle border border-light"><i class="fab fa-youtube" ></i></button> 
+            </a>
+            <a href="https://www.facebook.com/telegraf.rs/" target="_blank" class="mx-1">
+                <button type="button" class="bg-light text-primary p-3 rounded-circle border border-light"><i class="fab fa-facebook"></i></button> 
+            </a> 
+            <a href=" redakcija@telegraf.rs" target="_blank" class="mx-1">
+                <button type="button" class="bg-light text-primary p-3 rounded-circle border border-light"><i class="fas fa-envelope"></i></button> 
+            </a> 
+        </div>
+        <hr>
+        <p class="text-center">&copy Report, Savski Nasip 7, 11070 Novi Beograd</p>
     </footer>
    
-    <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery.js">
-    </script>
-    <script src="js/bootstrap.min.js">
-    </script>
-    <script src="script.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"></script>        
 </body>
 </html>

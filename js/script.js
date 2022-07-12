@@ -34,8 +34,9 @@ $("#modalniProzor").click(function() {
     $('textarea').val('');
 });
 
+// ANIMACIJA NA POČETNOJ
 var i = 0;
-var txt = 'DOBRODOŠLI U REPORT!!';
+var txt = 'DOBRO DOŠLI U REPORT NEWS! ';
 $(document).ready(  
     function pisi() 
     {
@@ -43,7 +44,7 @@ $(document).ready(
         {
             $("#report").append(txt.charAt(i)) ;
             i++;
-            setTimeout(pisi, 350);
+            setTimeout(pisi, 300);
         }
         if(i==txt.length)
         {
@@ -93,21 +94,17 @@ $(document).scroll(function(){
     if($(window).scrollTop()<=50) {
         $(".vrati").css({"margin-bottom": "0px", "opacity": "0.1"});
     }
-    else if( $(window).scrollTop()==($(document).height()-$(window).height())){
-        $(".vrati").css({"margin-top": "0px", "opacity": "0.8"})
-        $(".vrati").css({"margin-bottom": $(window).height()-30, "opacity": "0.8"})
-    }
     else
     $(".vrati").css({"margin-bottom": "0px", "opacity": "1"});
     
     $(".vrati").css("transition","0.6s");
 });
 
-$(".button").click(function() { 
-    if ($(this).html() == "Prikaži više") { 
-        $(this).html("Sakrij"); 
+$(".prikaziVise").click(function() { 
+    if ( $(this).text() == "Prikaži više") { 
+        $(this).text("Sakrij"); 
     } else { 
-        $(this).html("Prikaži više"); 
+        $(this).text("Prikaži više"); 
     }; 
 });
 

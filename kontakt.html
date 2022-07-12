@@ -7,146 +7,297 @@
     <title>Kontakt</title>
     <link href="css/bootstrap.min.css"  rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/stil.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
-<body class="bg-light">
-    <nav class="navbar navbar-expand-md bg-dark p-0 ">
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
-            <i class="fas fa-bars text-light" size="3" ></i>
-        </button>
-        <a href="index.html"> <img height="70px" src="img/logo.png"></a>
-        <div class="btn-group d-flex justify-content-center pr-2" role="group">
-                <a href="index.html"> 
-                    <button type="button" class="btn btn-secondary mr-1 ml-1"><i class="fas fa-home"></i></button>
-                </a>
-                    <button type="button" class="btn btn-secondary rounded" data-toggle="modal" data-target="#modalniProzor"><i class="far fa-comment-dots"></i></button>
-                    <div class="modal fade" id="modalniProzor">
-                        <div class="modal-dialog modal-md">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h4 class="modal-title">Ostavite vaš komentar</h4>
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                </div>
-                                <div class="modal-body">
-                                        <textarea name="" id="" class="form-control" cols="40" rows="8"></textarea>                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Pošaljite</button>
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori</button>
-                                </div>
-                            </div>
+<body>
+    <nav class="navbar navbar-expand-md bg-primary">
+        <div class="container-fluid bg-primary py-1">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-light fas fa-bars"></span>
+            </button>
+            <a href="index.html"><img height="70px" src="img/logo_transparent.png"></a>       
+            <div class="btn-group d-flex justify-content-center pr-2" role="group">
+                <a href="index.html"><button type="button" class="btn btn-primary text-light mr-1 ml-1"><i class="fas fa-home"></i></button></a>
+                <button type="button" class="btn btn-primary text-light" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="far fa-comment-dots"></i></button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Ostavite vaš komentar</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <textarea name="" id="" class="form-control" cols="40" rows="8"></textarea>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zatvori</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Pošaljite</button>
                         </div>
                     </div>
-                
+                    </div>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse text-secondary" id="navbarTogglerDemo01">
+                <ul class="navbar-nav p-1 m-0 indeks">
+                    <li class="nav-item">
+                        <a class="nav-link rounded text-light d-flex justify-content-center px-1" href="najnovije.html"><h6 class="m-0 d-inline"> <strong>NAJNOVIJE VESTI</strong></h6><span class="badge bg-danger pb-md-1 m-0 ms-1 ">NOVO!</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link rounded text-light  d-flex justify-content-center px-1" href="najpopularnije.html"><h6 class="m-0">  <strong>NAJPOPULARNIJE</strong></h6></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link rounded text-light  d-flex justify-content-center px-1" href="horoskop.html"> <h6 class="m-0"> <strong>HOROSKOP</strong></h6></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link rounded text-light  d-flex justify-content-center px-1" href="kontakt.html"> <h6 class="m-0"> <strong>KONTAKT</strong></h6></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="collapse navbar-collapse" id="collapse_target">
-            <ul class="navbar-nav p-0 m-0">
-                <li class="nav-item">
-                    <a class="nav-link rounded text-warning  d-flex justify-content-center pr-1 pl-1" href="najnovije.html"><h6 class="m-0 mr-1 d-inline"><em> <strong>Najnovije vesti</strong></em></h6><span class="badge badge-info m-0 ">NOVO!</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link rounded text-warning  d-flex justify-content-center pr-1 pl-1" href="najpopularnije1.html"><h6 class="m-0"> <em> <strong>Najpopularnije</strong></em></h6></a>
-                </li>
-                <li class="nav-item">
-                        <a class="nav-link rounded text-warning  d-flex justify-content-center" href="horoskop.html"> <h6 class="m-0"><em> <strong>Horoskop</strong></em></h6></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link rounded text-dark bg-warning d-flex justify-content-center pr-1 pl-1" href="kontakt.html"> <h6 class="m-0"><em> <strong>Kontakt</strong></em></h6></a>
-                </li>               
-            </ul>
-        </div>  
     </nav>
-    <div class="container" style=" background:url('img/novine4.jpg'); background-size:100%; background-repeat: repeat-y; box-shadow: 0px 0px 30px black;">
+    
     <div class="container-fluid">
         <div class="row s">
             <div class="col-lg-4 col-md-6 col-12">
-                <div class="border rounded border-dark p-2 m-2 siva mt-3" id="prvi">
-                <h5> <strong class="text-warning m-0"> Redakcija Report</strong> </h5> 
+                <div class="border rounded border-dark p-2 m-2 siva mt-3 bg-light" id="prvi">
+                <h5> <strong class="text-primary m-0"> Redakcija Report</strong> </h5> 
                 <p>  Savski Nasip 7, 11070 Novi Beograd</p> 
                 <p>  Telefon: +381 11 209 68 47</p> 
                 <p>  E-mail: redakcija@report.rs</p> 
                 </div>
-                <div class="border rounded border-dark p-2 m-2 siva" id="drugi">
-                <h5><strong class="text-warning"> Internet Group d.o.o.</strong></h5> 
+                <div class="border rounded border-dark p-2 m-2 siva bg-light" id="drugi">
+                <h5><strong class="text-primary"> Internet Group d.o.o.</strong></h5> 
                 <p> Savski Nasip 7, 11070 Novi Beograd</p> 
                 <p> Tel: +381 11 209 68 47</p> 
                 <p>  E-mail: info@internetgroup.rs</p> 
                 </div>
-                <div class="border rounded border-dark p-2 m-2 siva" id="treci">
-                <h5> <strong class="text-warning">Redakcija TopSpeed</strong></h5> 
+                <div class="border rounded border-dark p-2 m-2 siva bg-light" id="treci">
+                <h5> <strong class="text-primary">Redakcija TopSpeed</strong></h5> 
                 <p> Pole Position d.o.o.</p> 
                 <p> Tošin bunar 274a, 11070 Novi Beograd</p> 
                 <p> Tel: +381 11 22 84 415/+381 11 22 84 416</p> 
                 </div>
             </div>    
             <div class="col-lg-5 col-md-6 col-12">               
-                <div class="border rounded border-dark p-2 m-1 mt-3 siva" id="desno">
-                <h4> <strong class="text-warning m-0"> O nama</strong> </h4>
-                <p> <h5 class="text-warning d-inline">Report </h5> vam pruža informacije pre svih, uz obilje multimedijalnih sadržaja i mogućnost da iste lako podelite
-                 sa svojim prijateljima na društvenim medijima. Mi se ne ograničavamo samo na kratku informaciju, već se trudimo da pružimo
-                  širu sliku o događanjima, ali i da u potpunosti uključimo naše posetioce u priču. Društvene medije ne vidimo samo kao kanal
-                   za promociju, već i kao platformu za uspostavljanje odnosa sa našim čitaocima
-                 i mogućnost njihovog uključivanja u rad samog portala, čime stičemo jasnu prednost u odnosu na našu konkurenciju.
-                <br> Na samom portalu, iz nedelje u nedelju, gostovaće najzanimljivije ličnosti iz domaće Internet zajednice – poznati blogeri, 
-                
-           <br>     <h5 class="text-warning d-inline">Report </h5> je prvi u nizu projekata koji pokreće kompanija Internet Group specijalizovana za različite aspekte onlajn poslovanja, od kreiranja sadržaja, preko brige o nastupu velikih brendova onlajn do razvoja velikih Internet projekata.
-                </p>
+                <div class="border rounded border-dark p-2 m-1 mt-3 siva bg-light" id="desno">
+                    <h4> <strong class="text-primary m-0"> O nama</strong> </h4>
+                    <p> <h5 class="text-primary d-inline">Report </h5> vam pruža informacije pre svih, uz obilje multimedijalnih sadržaja i mogućnost da iste lako podelite
+                    sa svojim prijateljima na društvenim medijima. Mi se ne ograničavamo samo na kratku informaciju, već se trudimo da pružimo
+                    širu sliku o događanjima, ali i da u potpunosti uključimo naše posetioce u priču. Društvene medije ne vidimo samo kao kanal
+                    za promociju, već i kao platformu za uspostavljanje odnosa sa našim čitaocima
+                    i mogućnost njihovog uključivanja u rad samog portala, čime stičemo jasnu prednost u odnosu na našu konkurenciju.
+                    <br> Na samom portalu, iz nedelje u nedelju, gostovaće najzanimljivije ličnosti iz domaće Internet zajednice – poznati blogeri, 
+                    <br>  
+                    <h5 class="text-primary d-inline">Report </h5> je prvi u nizu projekata koji pokreće kompanija Internet Group specijalizovana za različite aspekte onlajn poslovanja, od kreiranja sadržaja, preko brige o nastupu velikih brendova onlajn do razvoja velikih Internet projekata.
+                    </p>
                 </div>   
             </div>
             <div class="col-lg-3 col-md-12">
-                    <form id="frmkontakt" name="forma" class=" mt-3 p-3 border rounded border-dark text-light bg-dark">                         
-                            <h5> <strong class="text-warning">Kontaktirajte nas</strong></h5> 
-                            <i class="fas fa-user-friends text-warning"></i>    <input type="text" id="ime" placeholder="Unesite ime"  pattern="[A-Z]{1}[a-z]{1,}" required> <br  class=" d-none d-lg-block">
-                      <nobr> <i class="fas fa-envelope-open-text text-warning"></i> <input type="email" id="email" placeholder="Unesite email"></nobr><br>   
-                            <label for="komentar">Komentar:</label> <br>
-                            <textarea name="" for="komentar" cols="20" rows="7" resize="horizontal" class="md-textarea form-control"></textarea><br>
-                            <button class="bg-warning border-warning d-inline p-1 " type="submit" id="dugme" >Pošalji</button>
-                            <button class="bg-warning border-warning d-inline p-1" type="reset">Resetuj</button>                    
-                    </form>
-                    <div class="card mt-2 mb-2 px-2 pb-0 bg-light">
-                            <div class="card-body pt-0 p-2  m-0 text-center">
-                                    <h5 class="card-title text-light  bg-warning rounded  mb-1 justify-content-center d-flex">TEMPERATURA:</h5>
-                                    <p class="card-text border-bottom bg-light rounded m-0 ">Danas: 20˚C</p>
-                                    <p class="card-text border-bottom bg-light rounded m-0">Sutra: 16˚C</p>
-                                    <p class="card-text border-bottom bg-light rounded m-0">Četvrtak: 11˚C</p>
-                                    <p class="card-text border-bottom bg-light rounded m-0">Petak: 16˚C</p>
-                                    <p class="card-text border-bottom bg-light rounded m-0">Subota: 18˚C</p>
-                                    <p class="card-text border-bottom bg-light rounded m-0">Nedelja: 15˚C</p>
-                                    <p class="card-text border-bottom bg-light rounded m-0">Ponedeljak: 9˚C</p>                   
-                                    <a href="vremenska.html" class="btn btn-success form-control mt-1">Vidi prognozu &#8649</a>
-                            </div>
-                            </div>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaAAAAB5CAMAAABIrgU4AAABUFBMVEX91jH///8mSMP/HwAhnQCZSpD91Sv932D91Bn93Vz92DH/2ir92jL/AAD/2C8PP8iuoHL93zOVQ5LpukUAmgAbQ8b/GAD9xy2XR5EAO8r/3Sl2eJ7qyjn/TQ0iRsTEr2b+fhz9vyuqY4D9tCj9qiX9zy8RQMf01C+SPpT+ix7/QAv/3h39zC5mqxH//fT//O7/993+77f+7a2zwSGhvB3q0C3+dhn+WRF9sRblxkbHxiU+owj+lCD+ZhU3Urr+hx3/9tb+55D92Ub9325Qpgzoukf+nyPjs1CzcXtBWq/dzCr9pCT+bRfSnV+NiY0qS77Wu1lhaa7+6Zj9432lvR7RySiLtBq+q2W3pm0AMM83VLJYaKR5fJagk4jKs1ueUItocaDcwFDBhm+SjIqnm3u6enXIjmnZplnfwkWva36hVol/fZ3Fimzyxz6Fg5LXpF3LUqEyAAASy0lEQVR4nO2d+0PTyBbHY8tWmLQpYFMgtuGhbQUEQd4oiIi4RZYWEGR5VFB8rO56///fbl5N8zhnZtJGG6rf+9slW2fmk3PmzJkzE+FWp+nRxuMXPdPtbkVoEtrdgDA1rbERuru7E92P2t2U0NQpgKY3Zg83E4nuRELQ1D3b7vaEpg4AND0z+7xHqLMxlHje7kaFphsOaGbj4Pami40J6EW7Gxaabi4gPRjYFDQ2HjgGoM2OmYRuJKBHM48Pe7RoAGJjEZppdxvD0k0DpE84tzdpbITOihJuEKDpR7MHLww2dDiGBR22u7Vh6YYAmt44OORkYwLqaXeLw1L0AWmrz0BsTEAdEyVEG9DM4+c93cwJB1L3RrvbHpIiC2hm9qBJNiagx+3uQEjSAB323I6cWmFjarPdXQhBPYcGoJ5EBNUKG1Pt7kEY6rEAtT4av/Uj9BtQxPUbUMT1G1DE1UGACFk4On7T7laErU4BtLAzt7zVlckctbshYasDAGmGMz/1JJPJdHV1bbW7MaHrhgMqLcwd64bTZSrTcR7uJgMqHc0vW4Zja6HdjQpdNxXQ6vGWh41uQMuk3e0KXSggCVE7GulXyQfHAPTTQgRtIERDP3xEMEBSKQeqJE5OTiqK3jLmbxO6Wmn2KsSna6vk7QXvWxbgddTIKJPiSrX29uTkpHa1UtIHRPxhmDBAYu/fQ4jk07Pzi5NqjtmsAbpaafYyaEDz3sde3gH1n7fdEvzcnZcF74PiZKJ2cabq45DWZAyIevq990qcVBiQCEkm+0wlk0ne9xMHlI4hUlVVLmo63Xubm8QZkdFUlqbU0yRnG/3GVoLsBwgRxh70Q3rnISS9hJ97MOZ+TpxcuT7T+q6qngHR/j95//smTohoaAbuby8u5ScmJvJLu+Pb90gfF6QmANntKhZjlyc57MXRAMVpyo7wACKlozdbU96egB4us+z9j6VXD/6A9OAv0f3cn/3gc4N3nH0TxdpduSijw/G3gAEifQ+31ybi2cYbm0pl40tPBzgYtQBIb5RcrJxfwYjIPQagPKtxZGF13ljkZKY8kwvs4fwhgvTnIDjwYwnnv60ZEMin/72DoygO78soHX0sKjAgzbHdW4trbHwDkIrntwssRK0BMhjFvq1AiFiA4lkBbxshO6uOFaiHUOkJV4hAGfpXzgZjGL82PKGkVC+peLSBKENLFZIsbOf9cGxGE88G6IhaBmQguhBE3y8zAaXuwS0jJSuv5rQOFyHYw/lCBL0bsPPq/1NpPINRdDhCsfQhRscTi8ln0FsqbE+kMDyWGT17SEMUAiANUbp85YsW2ICgKKG088YLx08I9nBQFkG6Aw/+H44wAfWDdZclibVyUWUNgvzN95KS5L08FY9lRduUNUcogLTWxa69hMh9lovb9QByJD2B8W9ECqCHy0yB/RM/wib0yTYh6RUcIfS/Eut8rhnezVBxzwuICM9Q5+ZGtDaABkwhAYqpQ3ueOZINaMIzCa0ibLyEYA+3CvZP+g80ocF3dmsRA+r/WLcf4TLNNB8d0LUHUHI0zxiBxlDEX2NuLixAsVj6W8lFiLxmNS9V8DRqZ4uHEAE9XBfcP0F5D5vQ57p9IAY0aDlBKbFf5Ov/iRtQ8n6cx3wsQqlxhFB4gGJD31ypkSQbkC9KKE1RCZm7PbCHg0IEY4D/AwEMjlk+DjOgT+ZwSwInn9hQzfV+JreZs497MEb6fjSgWNrlhbUWsto07ve8x2xCR9whgiHMhF4a44kY0OBX0wVK4hknn9jQF9fryXLw/tGAMythAtKs3BG9sgFl1/xNInMsQrCHg0MEY4wLyBxjtFX8B/zrA8sDih+GeDs/5JyDyWgg8zEJ3YcIhQpIjeUajeQANOGdhHSBBuIgBHs4OEQwpHyCTagg4QY0ZvE54eajyg73QUiA+acxHg+B4QgVkLZYa5hQ8inTyFMD0MS48ISCKDMFx3CUpZ5UeAdZiTHLiGOwAZkRgpSr8MRvJqBTB6C+3Sb4xLNLwHooXECx4rDdTBiQO6H9GhxXQg0VQGzHOB+tL3+BZvJOwQyonoQTz3knIA3QfgNQ8AnIemGBaShkQGqZDiibX1pa07WraXERBsQIFSBAOzRAUuErZCcPXkmIARneTxuDWoAxkO/aPSdkohkD0uV3csEAGRsfskyx+4YJgYC0idDaT00mabtWc8EAbdFTwrAJDf6jIAZkJeGkM2oCQZWNbTFtOPTxcCQSOJw7otRia4DU8p6m88uyjK6t5cvJejPHYUDUobR1RJuIfAY0R/8xSYBN6D8whBv8avGpUvio8tD62fmH6+sP3y73T9NFOX1RB0QECgLTt+N/HvUSCgRI/japaBJLX67XMesv1gM5BBDvVu9CkImI9aPi/0ATGoPsx96LUM5xQMXKeTUn6rUZ+nDkqhdnsV6q6zCHPxVf2h1ZXMMzqCnfLmYwQJaflSQlt4c4OjsllXzWEiChBGd0IAM6Zv2oJICTDTwBWVsRUm4dcxOqfL4iNpLDkjYe4kr9xSQCNgNlJ14P6I69T7i3hjDM+mahpgDpjVKG4RBUPpsMB5AgzPMSooYIZnc+wxk3SFYSTjzBnIR8OuwvxbDTXOg2S3atvvGjTcFPMRN67TGhZgFpHuAtbENp24KAFykQIGGVjw8jRDCGRIAzBoAB/Wst5ZRLxMPJ5Zx/e7Kh5CJsQNldR0xE+pBMpS+70jwgQdkDVwlDVfNdSo6AgPqSLtHHdqeLw4hYIYIhrH7E5/W+FqwsNubh1PUVGh9SgD1cNu/eXAEdjO4GPYv3FgBJJbALaWu2BAFl10ZcWgRzCQ2VqBsQpp74axEASXwm1P+/+jZEFZmB0lUaH7SYyRufYVOVN8XfAiBBuYa8tLxHAeTOJPAUxzFDBc6CbKzywGNAYxKhDIDevXMqHyyG8+8mJOG5ypvibwUQ7AXkMxogL69deBekIcIKFehZBEdrkeI3twG9rM/1WJCdzgG1IQ71wVNQ1u8qknnwDV5zj0grgAQFWmrXsz3YZOluDrM4TiBwHbYt3jNbaP2Ik89Hu4OT+3CQepduQERYAofdW38hYOn+bD48CxKUD0CYoFYCAIrHGZOQrh1qenueNy5E6kecctQEJ05BQL7KA4+QGMEXPeuPEhClZw+mJUDiNRTHpYMAworjXKLvhM9xEkLqRxxyVMJhQdzQFd3DkQG4m9B7CPs4zyvbGiBwLTeUMPqQ5NoTgba9AdHS22g5glcivPltq1EJpwH6Aq/DhxhTEBngMQtTSKQ9GiKgYWjDMRAg75yIiZbe9lfNw0LqRxoG5CgIlq5iYQLKg4DgPeefAMj85/kAeYvjMNGyChmgLBuS+C+NkF0Jp0uqIoDQIwymyAA880O9ROqewgRUAwFZmQTObV9fgh3RDlgxbxF6whVrSwUaoEHnqSGpBq9T2RYEAlqCACGlnT8ekBUk8AHiz85NUWyoq4tSNdIQUj9iOrhPrjRJDV4GNQkItKCfAAhKJdhh9hofoGecW3g79OUQX0augNvPV5fzQl1cNcQg4Ye7OOUubaHKByi7xBclMOsU2LtCerdQE3rgOjKkBQlwFFe8YKyDQEBQscFPCBKkErSYU8+CAeKMEuBDWy5C3nN4gCQBLMEyChTcD65g211NAYLXQXCYHd46CM4n1s/JJOGch188S1Xs4L2b0BP2RSNICVa9Es4Wutsg0ychbKG6DThycIRCzCRIYhnqQz0ZQuB/Pu/VBB8geohQ1xF78xuuYnyveB4U4VQPKxmHpHqgXBxJwkum0HJxygm8YVejAEqN9vnExWeBb/s784ZZPwJufvf7rk4A51ejf2+9LF0Cux2Hco5IsnQprGy2WIW3vIfqx4RAQHzm4u82bykjvcZU0PeFIA/nBwRGqLrUNJUQkoIENr6QOWAxJAsSkVlUjZlFI3DevVlA7BDBJsQIFaSXoIu74wUk1bCyX1V+S7lUBAnN/IE2tmH3OhRA0mQNqSuXv5vvFxGgXG2zgDhCBJsQPVSAy7EBQNSqK//1HZJo9RtcqepZYbfrwra8vVvjQQHpNwyJinh1F6v/TdenoFAB8YUIddEuvUIAvfTZBDoJ6QOxfrEyWb9PyhyRL737xk4EVjSirW9cppEcQSxNaAXQZW5l5apau9hHbw1QY5aRkQInIJ57r3YC8aFmFeDyHvfNFuYIDFOONqjFyt2TL0Svs1WElerJ93IlbW0VoWVXecdilWCnp7xTUMDi+cr6+npFTntvE3Ko+EGhA6qXXVnXPul0oDSIW4FPO+BbRNJnTkBSCVxF2IjkdKW8f/f8cr+8Lqf1AnoLEHq6PZsftSJWkiTb8DP+1GTA4yeqirMx/75Sr4AFAWUXn42MLC7u7u6ura0t6dKXQqxtb/4QwSa0jIUKEhxm+wEJygXj9ImqyrrqI2Kl6Silv/Hxh8b7WbiPxOJALBHy+SD5W/1wA7Zigy4mYyW04RCB6vcyW0ioAKcSIEBSDlmrIrIrNqFTA2bnU/HdxfGRNfx2GH/qOFxAaqVuQJTJ0t8qxrY3gUKEzDKhE3oChwoIoM9A4KwEGwN7hf6Q0vGscScZ/mefMwkXUPHaXsMFAMRKaIMg9GPDC3TXB24RwflsEJAk7HNcAWMr/bZelQ4HaDwj4Q0RQgYklxN2P8nDAOcA6YDA0sWM/hc6Ifj+K35AglgNMgj2VSOk0OwJSKC8MUxAasVxl0MQQCnqtjcBz92bBb8MQkA1CVyXYJdkex6+4D6G3yhKp81CjHEALqEMEZBarDmvCggCCErG26LenVSiHpUEqkng2qv+v0BAkkg/puqSo6axr6lTxNk4sOAID5Ca7nUmETVA/C2jXV8KhghdXfWRZxDyHe5SwPpSBJB+goObkGOzFcv30AUe4A0NkJ5CdI3rwwCvzgRlEloAR95xexz9hIr3DpJggNCdVRBQoFs8/Hz8EUKIgIoVz7EZZGsRaRvFguAQwZHMoRHKaHITUsDbrVBAetae04bsJIquvt2ghLITYM4rHEDq0F3vscBggCg5VHjknctQhJDG5sny/FHJ/dMIoE/oPqm4wunlit8dgAhZCkYoC97UEw4gtVjp9d2iHwwQfo4LziJ4btL2FddnMl1Tx3MLQL5HAU/aUQAJYu6M68pF+bvzN0iB+75Fkw9yg0TrgNRibC/nP/UcCBB0MZn1M2CI4EtXOwjphjM1f7SA2KQCHsjv/5dSaSAlLlQOI/LcKksKAWwoG8du+GgRkKqm1/e+gNdmBwEUj2OASvD84qv0NQlphrO1PLdD21NFAL2nlYJIYrXMNiJvOUkAQjiflgCpmvGUr5FvAwQDlIIdMHZXAnCqbjnTZRoOI/GqgLfC0AFpwyH0nrIQyZfee4+FEa5bf+Op/Cjq4psFpKpyOrZ/cSVhX9fASiyRJgIn0AyBmQLoS2hkdafEs1srwoA+0gEJkpK7OKVeI6WmfTebk+T9CbYRZbO7lB2xoIBU49snaTl2et57JVKKJzRAAQhhFdrI9Yuc54YhSe8GAVkXZFL/Q0UYPq+kQUaaL5HXz2v+0UgWWEaUTU3cb+7m+aGiXJTlov2/+t5UpXz5obe2ojC+HhRwDlqC2wgfwm/pW4//jEGiBQl1SaJSOvl+qppXkOljYb+u+xe1hAL9BOkbpV0+n03FxwXqZgv6Ba6Vt8Me1WrVqy85yfoAF7M7xF+iSBP4G3CIwH3mEZQCioOPLo3RZO7txffL8nolJsuV9dPyt4veqkD52BXpu5dPwYw0PE8FxmUr+DfsRL9++kfs3oBZBN6bEX6Q9G+kKZO22J+LI30D4/GUC5LxCaHU7j32B4Si/RVIX4igf9lhivdYd3REkn2F18+WdEqGshNLI09HuT7BFWlA7hBBX4Eez93UL6Val4By3yNVV6QB2SGCYTjzq3xHhTtLUQa0YBvO8psdzsPgHacoA3qTwXOev4wiDKg0Rcl5NqdEBLvJUIQBCaHGA4lEojvR8yKK/aQqyoBCk85m88Xz2Zlbj29cPzsdkMamW+g5nJ15dEvTdHe72xNYHQxId2rC5ovHGwYbQ4c3r5sdCkh3asLtg42ZW07N3DwD6kBAOpvEpj7h+HT7BvbSArTZHQG1PHz6hNMtHM5uTPvhaJptdweb0qYBKAqa3myFkMnm8Ua7e/EjFBFATXsgnQ3RggHYbjpAUQH0PDgg3amRFwezj9i/foMVFUCzgYIsnY10GwwGOk1RATTDa0E6m0TP88czHevU3IoKIJ4owUypacHA9C8CR1dUAN2ipzITZkrtYOPRL8TGUGQAHWCAdDbdm/qE86uxMRQZQBtQlGCwsdOdv6QiA+hRws9G2Dx0pjt/SUUG0LQjJWiweeFNd/6aigwgazvASEX3HPwKKxw+RQfQQbeettl8PtuRKbWmFR1AG7/ZQPo/lCtEOX/xprIAAAAASUVORK5CYII=" alt="" class="w-100 m-0 p-0 ms-auto">     
+                <form id="frmkontakt" name="forma" class=" mt-3 p-3 border rounded border-dark text-light bg-dark">                         
+                        <h5> <strong class="text-primary">Kontaktirajte nas</strong></h5> 
+                        <i class="fas fa-user-friends text-primary"></i>    <input type="text" id="ime" class="text-primary" placeholder="Unesite ime"  pattern="[A-Z]{1}[a-z]{1,}" required> <br  class=" d-none d-lg-block">
+                    <nobr> <i class="fas fa-envelope-open-text text-primary"></i> <input type="email"  class="text-primary" id="email" placeholder="Unesite email"></nobr><br>   
+                        <label class="text-primary" for="komentar">Komentar:</label> <br>
+                        <textarea name="" for="komentar" cols="20" rows="7" resize="horizontal" class="md-textarea form-control"></textarea><br>
+                        <button class="bg-primary border-primary d-inline p-1 border rounded text-light" type="submit" id="dugme" >Pošalji</button>
+                        <button class="bg-primary border-primary d-inline p-1 border rounded text-light" type="reset">Resetuj</button>                    
+                </form>
+                <div class="card mt-2 mb-2 px-2 pb-0 bg-light">
+                    <div class="card-body pt-0 p-2  m-0 text-center">
+                        <h5 class="card-title text-light bg-warning rounded mt-2 mb-1 justify-content-center d-flex">TEMPERATURA:</h5>
+                        <p class="card-text border-bottom bg-light rounded m-0 ">Danas: 20˚C</p>
+                        <p class="card-text border-bottom bg-light rounded m-0">Sutra: 16˚C</p>
+                        <p class="card-text border-bottom bg-light rounded m-0">Četvrtak: 11˚C</p>
+                        <p class="card-text border-bottom bg-light rounded m-0">Petak: 16˚C</p>
+                        <p class="card-text border-bottom bg-light rounded m-0">Subota: 18˚C</p>
+                        <p class="card-text border-bottom bg-light rounded m-0">Nedelja: 15˚C</p>
+                        <p class="card-text border-bottom bg-light rounded m-0">Ponedeljak: 9˚C</p>                   
+                        <a href="vremenska.html" class="btn btn-success form-control mt-1">Vidi prognozu &#8649</a>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <hr class="text-light fw-bold px-5">
+
+        <div class="row m-2">
+            <!-- Modal gallery -->
+            <section class="">
+                <!-- Section: Images -->
+                <section class="">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                    <div
+                        class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                        data-ripple-color="light"
+                    >
+                        <img
+                        src="https://mdbcdn.b-cdn.net/img/screens/yt/screen-video-1.webp"
+                        class="w-100"
+                        />
+                        <a href="#!" data-mdb-toggle="modal" data-mdb-target="#exampleModal1">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                        </a>
+                    </div>
+                    </div>
+            
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div
+                        class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                        data-ripple-color="light"
+                    >
+                        <img
+                        src="https://mdbcdn.b-cdn.net/img/screens/yt/screen-video-2.webp"
+                        class="w-100"
+                        />
+                        <a href="#!" data-mdb-toggle="modal" data-mdb-target="#exampleModal2">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                        </a>
+                    </div>
+                    </div>
+            
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div
+                        class="bg-image hover-overlay ripple shadow-1-strong rounded"
+                        data-ripple-color="light"
+                    >
+                        <img
+                        src="https://mdbcdn.b-cdn.net/img/screens/yt/screen-video-3.webp"
+                        class="w-100"
+                        />
+                        <a href="#!" data-mdb-toggle="modal" data-mdb-target="#exampleModal3">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                </section>
+                <!-- Section: Images -->
+            
+                <!-- Section: Modals -->
+                <section class="">
+                <!-- Modal 1 -->
+                <div
+                    class="modal fade"
+                    id="exampleModal1"
+                    tabindex="-1"
+                    aria-labelledby="exampleModal1Label"
+                    aria-hidden="true"
+                >
+                    <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="ratio ratio-16x9">
+                        <iframe
+                            src="https://www.youtube.com/embed/A3PDXmYoF5U"
+                            title="YouTube video"
+                            allowfullscreen
+                        ></iframe>
+                        </div>
+            
+                        <div class="text-center py-3">
+                        <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+                            Close
+                        </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- Modal 2 -->
+                <div
+                    class="modal fade"
+                    id="exampleModal2"
+                    tabindex="-1"
+                    aria-labelledby="exampleModal2Label"
+                    aria-hidden="true"
+                >
+                    <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="ratio ratio-16x9">
+                        <iframe
+                            src="https://www.youtube.com/embed/wTcNtgA6gHs"
+                            title="YouTube video"
+                            allowfullscreen
+                        ></iframe>
+                        </div>
+            
+                        <div class="text-center py-3">
+                        <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+                            Close
+                        </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- Modal 3 -->
+                <div
+                    class="modal fade"
+                    id="exampleModal3"
+                    tabindex="-1"
+                    aria-labelledby="exampleModal3Label"
+                    aria-hidden="true"
+                >
+                    <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="ratio ratio-16x9">
+                        <iframe
+                            src="https://www.youtube.com/embed/vlDzYIIOYmM"
+                            title="YouTube video"
+                            allowfullscreen
+                        ></iframe>
+                        </div>
+            
+                        <div class="text-center py-3">
+                        <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+                            Close
+                        </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </section>
+                <!-- Section: Modals -->
+            </section>
+            <!-- Modal gallery -->
+        </div>
     </div>
+
     
-    </div>
-    <footer class="bg-dark text-warning container-fluid pt-3 pb-1 w-100 " >
-        <span class="mr-5"> <h6 class="d-inline-block">&copy Report, Savski Nasip 7, 11070 Novi Beograd
-            <img src="img/favicon.png" alt=""> </h6></span>
-        <span class="d-inline-block">
-            <a href="https://chats.viber.com/telegraf.rs/en" target="_blank">
-                <button type="button" class="btn btn-warning rounded-circle"> <i class="fab fa-viber"></i></button> 
+
+    <footer class="bg-primary text-light container-fluid pt-3 pb-1 w-100 mt-5" >
+        <div class="row align-items-center"> 
+            <a href="index.html" class="col-lg-3 col-sm-12 text-center"><img style="height:5rem" src="img/logo_transparent.png"></a>    
+            <a href="" class="col-sm-4 col-lg-2  text-light text-decoration-none text-center ">O nama</a>
+            <a href="kontakt.html" class="col-sm-4 col-lg-2 text-light text-decoration-none text-center ">Kontakt</a>
+            <a href="" class="col-sm-4 col-lg-2 text-light text-decoration-none text-center ">Pravila i uslovi korišćenja</a>
+        </div>
+        <hr>
+        <div class="text-center">
+            <a href="https://chats.viber.com/telegraf.rs/en" target="_blank" class="mx-1 rounded-circle rounded-circle">
+                <button type="button" class="bg-light text-primary p-3 rounded-circle border border-light "> <i class="fab fa-viber"></i></button> 
             </a>
-            <a href="https://twitter.com/telegrafrs" target="_blank">
-                <button type="button" class="btn btn-warning rounded-circle"><i class="fab fa-twitter-square"></i></button> 
+            <a href="https://twitter.com/telegrafrs" target="_blank" class="mx-1 rounded-circle">
+                <button type="button" class="bg-light text-primary p-3 rounded-circle border border-light"><i class="fab fa-twitter"></i></button> 
             </a>
-            <a href="https://www.youtube.com/telegrafrstv" target="_blank">
-                <button type="button" class="btn btn-warning rounded-circle"><i class="fab fa-youtube" ></i></button> 
+            <a href="https://www.youtube.com/telegrafrstv" target="_blank" class="mx-1 rounded-circle">
+                <button type="button" class="bg-light text-primary p-3 rounded-circle border border-light"><i class="fab fa-youtube" ></i></button> 
             </a>
-            <a href="https://www.facebook.com/telegraf.rs/" target="_blank">
-                <button type="button" class="btn btn-warning rounded-circle"><i class="fab fa-facebook-square"></i></button> 
+            <a href="https://www.facebook.com/telegraf.rs/" target="_blank" class="mx-1 rounded-circle">
+                <button type="button" class="bg-light text-primary p-3 rounded-circle border border-light"><i class="fab fa-facebook"></i></button> 
             </a> 
-            <a href=" redakcija@telegraf.rs" target="_blank">
-                <button type="button" class="btn btn-warning rounded-circle"><i class="fas fa-envelope-square"></i></button> 
+            <a href=" redakcija@telegraf.rs" target="_blank" class="mx-1 rounded-circle">
+                <button type="button" class="bg-light text-primary p-3 rounded-circle border border-light"><i class="fas fa-envelope"></i></button> 
             </a> 
-        </span>
-    </footer>     
+        </div>
+        <hr>
+        <p class="text-center">&copy Report, Savski Nasip 7, 11070 Novi Beograd</p>
+    </footer>    
    
+    <script src="js/bootstrap.js"></script>
     <script src="https://code.jquery.com/jquery.js">
     </script>
-    <script src="js/bootstrap.min.js">
-    </script> <script src="js/script.js">
-        </script>
-   
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"></script>   
 </body>
 </html>
